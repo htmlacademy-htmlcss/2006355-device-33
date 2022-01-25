@@ -34,15 +34,16 @@
       </ul>
     </nav>
 
-    <button class="dropdown-button" type="button" aria-haspopup aria-expanded="false" aria-controls="nav-dropdown-list">
-      Каталог товаров
-    </button>
-    <nav class="dropdown-nav visually-hidden" id="nav-dropdown-list">
-      <ul class="dropdown-list">
-        <!-- TODO: Добавить ссылки на страницы товаров
-          Пока что не знаю какое содержимое у выпадашки -->
-      </ul>
-    </nav>
+    <!-- Кнопка "Каталог товаров" -->
+    <div class="catalog-wrapper">
+      <a class="catalog-link" href="catalog.html">
+        Каталог товаров
+      </a>
+      <!-- В aria-controls указана ссылка на элемент #catalog-nav, который в будущем сверстается (может быть 🤷) -->
+      <button class="catalog-button" type="button" aria-controls="catalog-nav" aria-expanded="false" aria-haspopup>
+        <span class="visually-hidden">Скрыть / Раскрыть</span>
+      </button>
+    </div>
 
     <!-- Навигация на контентные страницы -->
     <nav class="content-nav">
