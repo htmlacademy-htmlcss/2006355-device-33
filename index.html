@@ -18,21 +18,17 @@
       <button class="search-button" type="submit">Найти</button>
     </form>
 
-    <!-- Навигация на сервисные страницы -->
-    <nav class="service-nav">
-      <ul class="service-nav-list">
-        <li class="service-nav-item item-bounced">
-          <a class="service-nav-link" href="#">Войти</a>
-        </li>
-        <li class="service-nav-item">
-          <a class="service-nav-link" href="#">Сравнить</a>
-        </li>
-        <li class="service-nav-item">
-          <small class="cart-count">2</small>
-          <a class="service-nav-link" href="#">Корзина</a>
-        </li>
-      </ul>
-    </nav>
+    <!-- Обертка элементов аутентификации -->
+    <div class="auth-wrapper">
+      <a class="small-link auth-link" href="#">Войти</a>
+      <a class="small-link auth-link visually-hidden" href="#">Коля Петухов</a>
+      <button class="small-link auth-button visually-hidden" type="button">Выйти</button>
+    </div>
+
+    <!-- Ссылки на страницу сравнения и корзину -->
+    <a class="small-link compare-link" href="#">Сравнить</a>
+    <a class="small-link cart-link" href="#">Корзина</a>
+
 
     <!-- Кнопка "Каталог товаров" -->
     <div class="catalog-wrapper">
