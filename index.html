@@ -132,36 +132,40 @@
       </ul>
     </nav>
 
-    <!-- Аккордеон с разделами -->
-    <div class="accordion-wrapper">
+    <!-- Аккордеон особенностей -->
+    <div class="features-accordion">
+      <h2 class="visually-hidden">Особенности покупки у нас</h2>
+
       <!-- Кнопки аккордеона -->
-      <ul class="accordion-list" role="tablist">
-        <li class="accordion-item accordion-item-active" aria-controls="accordion-section-1">
-          <button class="accordion-button" type="button">Доставка</button>
+      <ul class="accordion-select-list" role="tablist">
+        <li class="accordion-select-item accordion-item-active" aria-controls="accordion-section-1">
+          <button class="accordion-select-button" type="button">Доставка</button>
         </li>
-        <li class="accordion-item" aria-controls="accordion-section-2">
-          <button class="accordion-button" type="button">Гарантия</button>
+        <li class="accordion-select-item" aria-controls="accordion-section-2">
+          <button class="accordion-select-button" type="button">Гарантия</button>
         </li>
-        <li class="accordion-item" aria-controls="accordion-section-2">
-          <button class="accordion-button" type="button">Кредит</button>
+        <li class="accordion-select-item" aria-controls="accordion-section-2">
+          <button class="accordion-select-button" type="button">Кредит</button>
         </li>
       </ul>
 
       <!-- Превью аккордеона -->
-      <section class="accordion-section" role="tabpanel" id="accordion-section-1">
-        <h2 class="accordion-title">Доставка</h2>
-        <p class="accordion-content">
-          Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-          совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
-          ваш этаж.
-        </p>
-      </section>
-      <section class="accordion-section visually-hidden" role="tabpanel" id="accordion-section-2">
-        <h2 class="accordion-title visually-hidden">Гарантия</h2>
-      </section>
-      <section class="accordion-section visually-hidden" role="tabpanel" id="accordion-section-3">
-        <h2 class="accordion-title">Кредит</h2>
-      </section>
+      <ul class="accordion-preview-list">
+        <li class="accordion-preview-item" role="tabpanel" id="accordion-preview-item-1">
+          <h3 class="accordion-preview-title">Доставка</h3>
+          <p class="accordion-preview-content">
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+            совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
+            ваш этаж.
+          </p>
+        </li>
+        <li class="accordion-preview-item visually-hidden" role="tabpanel" id="accordion-preview-item-2">
+          <h3 class="accordion-preview-title visually-hidden">Гарантия</h3>
+        </li>
+        <li class="accordion-preview-item visually-hidden" role="tabpanel" id="accordion-preview-item-3">
+          <h3 class="accordion-title">Кредит</h3>
+        </li>
+      </ul>
     </div>
 
     <!-- Доставка редкого товара -->
