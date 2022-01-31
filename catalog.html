@@ -123,32 +123,37 @@
 
         <!-- Фильтр для цвета -->
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <label class="catalog-filter-title" for="price-range">
+            Стоимость
+          </label>
+          <input class="control-input" type="range" name="price" id="price-range">
+
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Цвет</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  Черный <input class="control-input" type="checkbox" name="black" checked>
+                  <input class="control-input" type="checkbox" name="black" checked> Черный
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  Белый <input class="control-input" type="checkbox" name="white" checked>
+                  <input class="control-input" type="checkbox" name="white" checked> Белый
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  Синий <input class="control-input" type="checkbox" name="blue">
+                  <input class="control-input" type="checkbox" name="blue"> Синий
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  Красный <input class="control-input" type="checkbox" name="red">
+                  <input class="control-input" type="checkbox" name="red"> Красный
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  Розовый <input class="control-input" type="checkbox" name="pink">
+                  <input class="control-input" type="checkbox" name="pink"> Розовый
                 </label>
               </li>
             </ul>
@@ -160,12 +165,12 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  Есть <input class="control-input" type="radio" name="bluetooth" value="1">
+                  <input class="control-input" type="radio" name="bluetooth" value="1"> Есть
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  Нет <input class="control-input" type="radio" name="bluetooth" value="0">
+                  <input class="control-input" type="radio" name="bluetooth" value="0"> Нет
                 </label>
               </li>
             </ul>
@@ -195,7 +200,7 @@
 
       <!-- Обертка для продуктов -->
       <div class="products-wrapper">
-        <h3 class="visually-hidden">Сами продукты</h3>
+        <h3 class="visually-hidden">Список продуктов</h3>
         <ul class="product-list">
           <li class="product-card">
             <a class="product-link" href="#">
