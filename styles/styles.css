@@ -1,0 +1,63 @@
+.login-link::before {
+  content: url("../images/person.svg");
+}
+
+.profile-link::before {
+  content: url("../images/person.svg");
+}
+
+.compare-link::before {
+  content: url("../images/charts.svg");
+}
+
+.cart-link::before {
+  content: url("../images/cart.svg");
+}
+
+.catalog-button::before {
+  content: url("../images/plus.svg");
+}
+
+.slider-prev::before {
+  content: url("../images/arrow-left.svg");
+}
+
+.slider-next::before {
+  content: url("../images/arrow-right.svg");
+}
+
+.accordion-delivery::before {
+  content: url("../images/postman.svg");
+}
+
+.special-delivery::before {
+  content: url("../images/truck.svg");
+}
+
+.search-form::before {
+  content: url("../images/magnifier.svg");
+}
+
+.categories-link-1::before {
+  content: url("../images/content/catalog-1.svg");
+}
+
+.categories-link-2::before {
+  content: url("../images/content/catalog-2.svg");
+}
+
+.categories-link-3::before {
+  content: url("../images/content/catalog-3.svg");
+}
+
+.categories-link-4::before {
+  content: url("../images/content/catalog-4.svg");
+}
+
+.categories-link-5::before {
+  content: url("../images/content/catalog-5.svg");
+}
+
+.categories-link-6::before {
+  content: url("../images/content/catalog-6.svg");
+}
