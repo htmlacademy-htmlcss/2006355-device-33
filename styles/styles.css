@@ -61,3 +61,15 @@
 .categories-link-6::before {
   content: url("../images/content/catalog-6.svg");
 }
+
+.social-button-facebook {
+  content: url("../images/facebook.svg");
+}
+
+.social-button-instagram {
+  content: url("../images/instagram.svg");
+}
+
+.social-button-twitter {
+  content: url("../images/twitter.svg");
+}
