@@ -1,0 +1,99 @@
+/* Подключение шрифтов (2) */
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik//rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik//rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/rubik//rubik-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  /* Цвета */
+  --color-black: #000000;
+  --color-dark: #444444;
+  --color-grey: #dcdcdc;
+  --color-lightgrey: #ebebeb;
+  --color-light: #f0f0f0;
+  --color-white: #ffffff;
+  --color-yellow: #ffe17f;
+  --color-dark-yellow: #ffc700;
+  --color-purple: #af4fff;
+  --color-error: #ff3d3d;
+  --color-warning: #fd912e;
+  --color-success: #08af00;
+
+  /* Переменные стилей */
+  --font-main: Rubik, sans-serif;
+  --font-secondary: Raleway, sans-serif;
+}
+
+/* Общие стили */
+body {
+  font-family: var(--font-main);
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+}
+
+.button {
+  background-color: var(--color-yellow);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-black);
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  line-height: 21;
+}
+
+.button-selected {
+  background-color: var(--color-black);
+  color: var(--color-yellow);
+}
+
+.header-1 {
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  color: var(--color-black);
+}
+
+.header-2 {
+  font-weight: 800;
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  color: var(--color-black);
+}
+
+.header-3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-black);
+}
