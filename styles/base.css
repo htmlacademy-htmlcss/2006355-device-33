@@ -70,11 +70,6 @@ body {
   line-height: 21;
 }
 
-.button-selected {
-  background-color: var(--color-black);
-  color: var(--color-yellow);
-}
-
 .header-1 {
   font-family: var(--font-secondary);
   font-weight: 800;

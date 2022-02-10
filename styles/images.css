@@ -67,14 +67,14 @@
   content: url("../images/ok.svg");
 }
 
-.social-button-facebook {
+.social-button-facebook::before {
   content: url("../images/facebook.svg");
 }
 
-.social-button-instagram {
+.social-button-instagram::before {
   content: url("../images/instagram.svg");
 }
 
-.social-button-twitter {
+.social-button-twitter::before {
   content: url("../images/twitter.svg");
 }

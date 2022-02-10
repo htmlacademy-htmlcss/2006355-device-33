@@ -6,7 +6,7 @@
   <title>HTML Academy: Девайс</title>
   <link rel="stylesheet" href="./styles/base.css">
   <link rel="stylesheet" href="./styles/images.css">
-  <link rel="stylesheet" href="./styles/custom-index.css">
+  <link rel="stylesheet" href="./styles/custom.css">
 </head>
 
 <body>
@@ -43,7 +43,7 @@
 
     <!-- Кнопка "Каталог товаров" -->
     <div class="catalog-wrapper">
-      <a class="header-2" href="catalog.html">
+      <a class="header-2 catalog-title" href="catalog.html">
         Каталог товаров
       </a>
       <!-- В aria-controls указана ссылка на элемент #catalog-nav, который в будущем сверстается (может быть 🤷) -->
@@ -161,8 +161,8 @@
 
       <!-- Кнопки аккордеона -->
       <ul class="accordion-select-list" role="tablist">
-        <li class="accordion-select-item accordion-item-active" aria-controls="accordion-preview-item-1">
-          <button class="button button-selected" type="button">Доставка</button>
+        <li class="accordion-select-item" aria-controls="accordion-preview-item-1">
+          <button class="button accordion-button-active" type="button">Доставка</button>
         </li>
         <li class="accordion-select-item" aria-controls="accordion-preview-item-2">
           <button class="button" type="button">Гарантия</button>
