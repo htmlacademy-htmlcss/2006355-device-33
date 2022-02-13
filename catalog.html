@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Каталог | HTML Academy: Девайс</title>
-  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/images.css">
+  <link rel="stylesheet" href="./styles/custom.css">
 </head>
 
 <body>
@@ -21,13 +23,13 @@
 
     <!-- Обертка элементов аутентификации -->
     <div class="auth-wrapper">
-      <a class="small-link login-link visually-hidden" href="#">
+      <a class="small-link login-link" href="#">
         Войти
       </a>
-      <a class="small-link profile-link" href="#">
+      <a class="small-link profile-link visually-hidden" href="#">
         Коля Петухов
       </a>
-      <button class="small-link" type="button">Выйти</button>
+      <button class="small-link visually-hidden" type="button">Выйти</button>
     </div>
 
     <!-- Ссылки на страницу сравнения и корзину -->
@@ -41,7 +43,7 @@
 
     <!-- Кнопка "Каталог товаров" -->
     <div class="catalog-wrapper">
-      <a class="catalog-link" href="catalog.html">
+      <a class="header-2" href="catalog.html">
         Каталог товаров
       </a>
       <!-- В aria-controls указана ссылка на элемент #catalog-nav, который в будущем сверстается (может быть 🤷) -->
@@ -54,13 +56,13 @@
     <nav class="content-nav">
       <ul class="content-nav-list">
         <li class="content-nav-item">
-          <a class="content-nav-link" href="#">Доставка</a>
+          <a class="header-2 content-nav-link" href="#">Доставка</a>
         </li>
         <li class="content-nav-item">
-          <a class="content-nav-link" href="#">Гарантия</a>
+          <a class="header-2 content-nav-link" href="#">Гарантия</a>
         </li>
         <li class="content-nav-item">
-          <a class="content-nav-link" href="#">Контакты</a>
+          <a class="header-2 content-nav-link" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -69,7 +71,7 @@
   <main class="main-catalog">
     <!-- Внутренняя шапка страницы -->
     <header class="catalog-header">
-      <h1 class="header-title">Моноподы для селфи</h1>
+      <h1 class="header-1">Моноподы для селфи</h1>
       <ol class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -88,7 +90,7 @@
 
       <!-- Обертка для фильтра -->
       <div class="catalog-filter-wrapper">
-        <h3 class="catalog-filter-header">Фильтр</h3>
+        <h3 class="service-header">Фильтр</h3>
 
         <!-- Фильтр для цвета -->
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -144,13 +146,13 @@
               </li>
             </ul>
           </fieldset>
-          <button class="catalog-button" type="submit">Показать</button>
+          <button class="button            " type="submit">Показать</button>
         </form>
       </div>
 
       <!-- Обертка для сортировки -->
       <div class="catalog-sort-wrapper">
-        <h3 class="catalog-sort-header">Сортировка</h3>
+        <h3 class="service-header">Сортировка</h3>
         <form class="catalog-sort" action="https://echo.htmlacademy.ru/" method="get">
           <select class="select-control" aria-label="Сортировка">
             <option value="popular">Популярные</option>
@@ -253,19 +255,19 @@
       <nav class="footer-nav">
         <ul class="footer-list">
           <li class="footer-item">
-            <a class="footer-link" href="#">Доставка</a>
+            <a class="header-2 footer-link" href="#">Доставка</a>
           </li>
           <li class="footer-item">
-            <a class="footer-link" href="#">Гарантия</a>
+            <a class="header-2 footer-link" href="#">Гарантия</a>
           </li>
           <li class="footer-item">
-            <a class="footer-link" href="#">Контакты</a>
+            <a class="header-2 footer-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
 
       <!-- Лист социальных кнопок -->
-      <ul class="social-list">
+      <u l class="social-list">
         <li class="social-item">
           <a class="social-button social-button-facebook" href="https://www.facebook.com/htmlacademy/">
             <span class="visually-hidden">Facebook</span>
@@ -281,7 +283,7 @@
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
-      </ul>
+      </u>
     </section>
 
     <!-- Футер контакты -->

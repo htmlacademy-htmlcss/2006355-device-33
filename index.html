@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/images.css">
+  <link rel="stylesheet" href="./styles/custom.css">
 </head>
 
 <body>
@@ -41,7 +43,7 @@
 
     <!-- Кнопка "Каталог товаров" -->
     <div class="catalog-wrapper">
-      <a class="catalog-link" href="catalog.html">
+      <a class="header-2 catalog-title" href="catalog.html">
         Каталог товаров
       </a>
       <!-- В aria-controls указана ссылка на элемент #catalog-nav, который в будущем сверстается (может быть 🤷) -->
@@ -54,13 +56,13 @@
     <nav class="content-nav">
       <ul class="content-nav-list">
         <li class="content-nav-item">
-          <a class="content-nav-link" href="#">Доставка</a>
+          <a class="header-2 content-nav-link" href="#">Доставка</a>
         </li>
         <li class="content-nav-item">
-          <a class="content-nav-link" href="#">Гарантия</a>
+          <a class="header-2 content-nav-link" href="#">Гарантия</a>
         </li>
         <li class="content-nav-item">
-          <a class="content-nav-link" href="#">Контакты</a>
+          <a class="header-2 content-nav-link" href="#">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -84,13 +86,13 @@
 
       <!-- Описание особенности -->
       <div class="promo-desc">
-        <span>01</span>
-        <p class="promo-title">Порхает как бабочка, жалит как пчела!</p>
+        <p class="promo-count">01</p>
+        <p class="header-1">Порхает как бабочка, жалит как пчела!</p>
         <p class="promo-content">
           Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
           замаскированным под стандартную камеру.
         </p>
-        <a class="link promo-link" href="#">Подробнее</a>
+        <a class="button" href="#">Подробнее</a>
         <ol class="slider-pagination">
           <li class="slider-pagination-item">
             <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -159,21 +161,21 @@
 
       <!-- Кнопки аккордеона -->
       <ul class="accordion-select-list" role="tablist">
-        <li class="accordion-select-item accordion-item-active" aria-controls="accordion-preview-item-1">
-          <button class="accordion-select-button" type="button">Доставка</button>
+        <li class="accordion-select-item" aria-controls="accordion-preview-item-1">
+          <button class="button accordion-button-active" type="button">Доставка</button>
         </li>
         <li class="accordion-select-item" aria-controls="accordion-preview-item-2">
-          <button class="accordion-select-button" type="button">Гарантия</button>
+          <button class="button" type="button">Гарантия</button>
         </li>
         <li class="accordion-select-item" aria-controls="accordion-preview-item-3">
-          <button class="accordion-select-button" type="button">Кредит</button>
+          <button class="button" type="button">Кредит</button>
         </li>
       </ul>
 
       <!-- Превью аккордеона -->
       <ul class="accordion-preview-list">
         <li class="accordion-preview-item accordion-delivery" role="tabpanel" id="accordion-preview-item-1">
-          <h3 class="accordion-preview-title">Доставка</h3>
+          <h3 class="header-1">Доставка</h3>
           <p class="accordion-preview-content">
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду
             совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
@@ -184,14 +186,14 @@
           <h3 class="accordion-preview-title">Гарантия</h3>
         </li>
         <li class="accordion-preview-item visually-hidden" role="tabpanel" id="accordion-preview-item-3">
-          <h3 class="accordion-title">Кредит</h3>
+          <h3 class="accordion-preview-title">Кредит</h3>
         </li>
       </ul>
     </section>
 
     <!-- Доставка редкого товара -->
     <section class="special-delivery">
-      <h2 class="special-delivery-parag">Доставим редкий товар под заказ</h2>
+      <h2 class="special-delivery-text">Доставим редкий товар под заказ</h2>
       <a class="special-delivery-button" href="#">
         <span class="visually-hidden">Узнать больше</span>
       </a>
@@ -201,7 +203,7 @@
       <!-- Раздел "О нас" -->
       <section class="about">
         <hr class="dash">
-        <h2 class="about-title">О нас</h2>
+        <h2 class="header-1">О нас</h2>
         <p class="about-parag">
           Огромный выбор гаджетов не оставит равнодушным гика, который есть в
           каждом из нас.
@@ -215,36 +217,36 @@
           <li class="about-item">СДИК</li>
           <li class="about-item">ТоксБерри</li>
         </ul>
-        <a class="link about-link" href="#">Подробнее о нас</a>
+        <a class="button about-link" href="#">Подробнее о нас</a>
       </section>
 
       <!-- Раздел "Контакты" -->
       <section class="contacts">
         <hr class="dash">
-        <h2 class="contacts-title">Контакты</h2>
+        <h2 class="header-1">Контакты</h2>
         <p class="contacts-parag">
           Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
           проверить работоспособность покупки.
         </p>
-        <h3 class="contacts-subtitle">Интернет-магазин «Девайс»</h3>
-        <address class="contacts-adress-container">
+        <h3 class="header-3">Интернет-магазин «Девайс»</h3>
+        <address class="contacts-address-container">
           <p class="contacts-address">
             Санкт-Петербург, набережная реки Карповки, 5, литера П.
           </p>
           <a class="contacts-phone" href="tel:+78128121212">+7 812 812-12-12</a>
         </address>
-        <h3 class="contacts-subtitle">Время работы</h3>
+        <h3 class="header-3">Время работы</h3>
         <ul class="contacts-schedule">
           <li class="schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
-        <a class="link" href="#">Напишите нам</a>
+        <a class="button" href="#">Напишите нам</a>
       </section>
     </div>
 
     <!-- Раздел "Рассылки" -->
     <section class="newsletter">
-      <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+      <h2 class="header-1">Подпишитесь на рассылку</h2>
       <p class="newsletter-content">
         Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
         распаковками, а также акции, спецпредложения и вот это вот всё.
@@ -277,19 +279,19 @@
       <nav class="footer-nav">
         <ul class="footer-list">
           <li class="footer-item">
-            <a class="footer-link" href="#">Доставка</a>
+            <a class="header-2 footer-link" href="#">Доставка</a>
           </li>
           <li class="footer-item">
-            <a class="footer-link" href="#">Гарантия</a>
+            <a class="header-2 footer-link" href="#">Гарантия</a>
           </li>
           <li class="footer-item">
-            <a class="footer-link" href="#">Контакты</a>
+            <a class="header-2 footer-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
 
       <!-- Лист социальных кнопок -->
-      <ul class="social-list">
+      <u l class="social-list">
         <li class="social-item">
           <a class="social-button social-button-facebook" href="https://www.facebook.com/htmlacademy/">
             <span class="visually-hidden">Facebook</span>
@@ -305,7 +307,7 @@
             <span class="visually-hidden">Twitter</span>
           </a>
         </li>
-      </ul>
+      </u>
     </section>
 
     <!-- Футер контакты -->

@@ -1,3 +1,4 @@
+/* Подключение декоративных изображений */
 .login-link::before {
   content: url("../images/person.svg");
 }
@@ -62,14 +63,18 @@
   content: url("../images/content/catalog-6.svg");
 }
 
-.social-button-facebook {
+.newsletter-info::before {
+  content: url("../images/ok.svg");
+}
+
+.social-button-facebook::before {
   content: url("../images/facebook.svg");
 }
 
-.social-button-instagram {
+.social-button-instagram::before {
   content: url("../images/instagram.svg");
 }
 
-.social-button-twitter {
+.social-button-twitter::before {
   content: url("../images/twitter.svg");
 }
