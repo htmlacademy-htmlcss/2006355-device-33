@@ -1,3 +1,189 @@
+/* Подключение декоративных изображений */
+.login-link::before {
+  content: url("../images/person.svg");
+}
+
+.profile-link::before {
+  content: url("../images/person.svg");
+}
+
+.compare-link::before {
+  content: url("../images/charts.svg");
+}
+
+.cart-link::before {
+  content: url("../images/cart.svg");
+}
+
+.catalog-button::before {
+  content: url("../images/plus.svg");
+}
+
+.slider-prev::before {
+  content: url("../images/arrow-left.svg");
+}
+
+.slider-next::before {
+  content: url("../images/arrow-right.svg");
+}
+
+.accordion-delivery::before {
+  content: url("../images/postman.svg");
+}
+
+.special-delivery::before {
+  content: url("../images/truck.svg");
+}
+
+.search-form::before {
+  content: url("../images/magnifier.svg");
+}
+
+.categories-link-1::before {
+  content: url("../images/content/catalog-1.svg");
+}
+
+.categories-link-2::before {
+  content: url("../images/content/catalog-2.svg");
+}
+
+.categories-link-3::before {
+  content: url("../images/content/catalog-3.svg");
+}
+
+.categories-link-4::before {
+  content: url("../images/content/catalog-4.svg");
+}
+
+.categories-link-5::before {
+  content: url("../images/content/catalog-5.svg");
+}
+
+.categories-link-6::before {
+  content: url("../images/content/catalog-6.svg");
+}
+
+.newsletter-info::before {
+  content: url("../images/ok.svg");
+}
+
+.social-button-facebook::before {
+  content: url("../images/facebook.svg");
+}
+
+.social-button-instagram::before {
+  content: url("../images/instagram.svg");
+}
+
+.social-button-twitter::before {
+  content: url("../images/twitter.svg");
+}
+
+/* Подключение шрифтов */
+@font-face {
+  font-family: Raleway;
+  font-weight: 800;
+  font-style: normal;
+
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-weight: 400;
+  font-style: normal;
+
+  src: url("../fonts/rubik//rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-weight: 700;
+  font-style: normal;
+
+  src: url("../fonts/rubik//rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Rubik;
+  font-weight: 800;
+  font-style: normal;
+
+  src: url("../fonts/rubik//rubik-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Переменные для стилей */
+:root {
+  --color-black: #000000;
+  --color-dark: #444444;
+  --color-grey: #dcdcdc;
+  --color-lightgrey: #ebebeb;
+  --color-light: #f0f0f0;
+  --color-white: #ffffff;
+  --color-yellow: #ffe17f;
+  --color-dark-yellow: #ffc700;
+  --color-purple: #af4fff;
+  --color-error: #ff3d3d;
+  --color-warning: #fd912e;
+  --color-success: #08af00;
+
+  --font-main: Rubik, sans-serif;
+  --font-secondary: Raleway, sans-serif;
+}
+
+/* Общие стили */
+body {
+  font-family: var(--font-main);
+  font-size: 18px;
+  line-height: 30px;
+
+  color: var(--color-dark);
+  background-color: var(--color-white);
+}
+
+.button {
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  line-height: 21;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: var(--color-black);
+  background-color: var(--color-yellow);
+}
+
+.header-1 {
+  font-family: var(--font-secondary);
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+
+  color: var(--color-black);
+}
+
+.header-2 {
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  line-height: 21px;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: var(--color-black);
+}
+
+.header-3 {
+  font-size: 24px;
+  font-weight: 700;
+
+  color: var(--color-black);
+}
+
 /* Индивидуальные стили */
 .page-header {
   background-color: var(--color-yellow);
@@ -258,3 +444,4 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
+
