@@ -148,7 +148,7 @@ body {
 .button {
   font-family: var(--font-secondary);
   font-weight: 800;
-  line-height: 21;
+  line-height: 21px;
 
   text-decoration: none;
   text-transform: uppercase;
