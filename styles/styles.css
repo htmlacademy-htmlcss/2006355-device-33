@@ -145,6 +145,8 @@ body {
   background-color: var(--color-white);
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 /* TODO: Попозже заменить на полноценный класс со всеми свойствами*/
@@ -560,4 +562,8 @@ body {
 
 .footer-row {
   justify-content: space-between;
+}
+
+.main-index {
+  flex-grow: 1;
 }
