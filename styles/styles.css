@@ -210,7 +210,13 @@ body {
   display: flex;
 }
 
-/* Стили для шапки страницы */
+/* Стили для главной страницы */
+
+.main-index {
+  flex-grow: 1;
+}
+
+/* Стили для главной шапки страницы */
 
 .page-header {
   box-sizing: border-box;
@@ -347,6 +353,12 @@ body {
   line-height: 21px;
 }
 
+/* Стили для раздела промо-акции */
+
+.promo-wrapper {
+  display: flex;
+}
+
 .promo-count {
   margin: 0;
 
@@ -369,6 +381,8 @@ body {
 .promo-list-data {
   font-size: 36px;
 }
+
+/* Стили для категорий */
 
 .categories-list {
   display: flex;
@@ -404,6 +418,8 @@ body {
   height: 100%;
 }
 
+/* Стили для аккордеона особенностей */
+
 .features-accordion {
   background-color: var(--color-light);
 }
@@ -435,6 +451,8 @@ body {
   background-color: var(--color-black);
 }
 
+/* Стили для раздела специальной доставки */
+
 .special-delivery {
   display: flex;
 
@@ -460,38 +478,6 @@ body {
   font-size: 20px;
   line-height: 23px;
   line-height: 23px;
-}
-
-.credentials-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.about-wrapper {
-  width: 497px;
-}
-
-.about-item {
-  letter-spacing: -0.02em;
-
-  color: var(--color-black);
-
-  font-weight: 700;
-  line-height: 20px;
-}
-
-.contacts-wrapper {
-  width: 509px;
-}
-
-.contacts-address-container {
-  font-style: normal;
-}
-
-.contacts-phone {
-  text-decoration: none;
-
-  color: inherit;
 }
 
 /* Стили для "Подпишитесь на рассылку" */
@@ -540,6 +526,8 @@ body {
   line-height: 21px;
 }
 
+/* Стили для главного подвала страницы */
+
 .page-footer {
   padding-top: 62px;
 
@@ -573,6 +561,13 @@ body {
   text-decoration: none;
 
   color: inherit;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  line-height: 21px;
 }
 
 .footer-contacts {
@@ -584,6 +579,96 @@ body {
 
   font-size: 16px;
   line-height: 20px;
+}
+
+/* Разделы с информацией о магазине и контактах */
+
+.credentials-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  width: 497px;
+}
+
+.about-title {
+  color: var(--color-black);
+
+  font-family: var(--font-secondary);
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+.about-item {
+  letter-spacing: -0.02em;
+
+  color: var(--color-black);
+
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.about-link {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: var(--color-black);
+  background-color: var(--color-yellow);
+
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  line-height: 21px;
+}
+
+.contacts {
+  width: 509px;
+}
+
+.contacts-title {
+  color: var(--color-black);
+
+  font-family: var(--font-secondary);
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+.store-title {
+  color: var(--color-black);
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.store-address {
+  font-style: normal;
+}
+
+.contacts-phone {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+.schedule-title {
+  color: var(--color-black);
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.schedule-link {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: var(--color-black);
+  background-color: var(--color-yellow);
+
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  line-height: 21px;
 }
 
 .breadcrumbs-list {
@@ -749,8 +834,4 @@ body {
 
 .footer-row {
   justify-content: space-between;
-}
-
-.main-index {
-  flex-grow: 1;
 }
