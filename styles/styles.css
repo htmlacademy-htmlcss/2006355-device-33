@@ -355,8 +355,17 @@ body {
 
 /* Стили для раздела промо-акции */
 
-.promo-wrapper {
+.promo {
   display: flex;
+}
+
+.promo-title {
+  color: var(--color-black);
+
+  font-family: var(--font-secondary);
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
 }
 
 .promo-count {
@@ -478,6 +487,14 @@ body {
   font-size: 20px;
   line-height: 23px;
   line-height: 23px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  color: var(--color-black);
+
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  line-height: 21px;
 }
 
 /* Стили для "Подпишитесь на рассылку" */
@@ -524,61 +541,6 @@ body {
   font-size: inherit;
   font-weight: 800;
   line-height: 21px;
-}
-
-/* Стили для главного подвала страницы */
-
-.page-footer {
-  padding-top: 62px;
-
-  color: var(--color-white);
-  background-color: var(--color-dark);
-}
-
-.footer-address {
-  width: 148px;
-
-  font-size: 16px;
-  font-style: normal;
-  line-height: 20px;
-}
-
-.footer-list {
-  display: flex;
-  justify-content: space-between;
-
-  margin: 0;
-  padding: 0;
-
-  list-style-type: none;
-}
-
-.footer-links {
-  width: 444px;
-}
-
-.footer-link {
-  text-decoration: none;
-
-  color: inherit;
-
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-
-  font-family: var(--font-secondary);
-  font-weight: 800;
-  line-height: 21px;
-}
-
-.footer-contacts {
-  width: 175px;
-}
-
-.footer-phone {
-  color: inherit;
-
-  font-size: 16px;
-  line-height: 20px;
 }
 
 /* Разделы с информацией о магазине и контактах */
@@ -670,6 +632,92 @@ body {
   font-weight: 800;
   line-height: 21px;
 }
+
+/* Стили для главного подвала страницы */
+
+.page-footer {
+  padding-top: 62px;
+
+  color: var(--color-white);
+  background-color: var(--color-dark);
+}
+
+.footer-address {
+  width: 148px;
+
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.footer-links {
+  width: 444px;
+}
+
+.footer-link {
+  text-decoration: none;
+
+  color: inherit;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  line-height: 21px;
+}
+
+.footer-contacts {
+  width: 175px;
+}
+
+.footer-phone {
+  color: inherit;
+
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.social-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin: 0 auto;
+  width: 150px;
+  flex-wrap: wrap;
+}
+
+.social-item:not(:nth-child(3n)) {
+  margin-right: 15px;
+}
+
+.social-item {
+  margin-bottom: 15px;
+}
+
+.social-button {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Стили для страницы каталога */
 
 .breadcrumbs-list {
   display: flex;
