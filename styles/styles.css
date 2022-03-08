@@ -441,8 +441,33 @@ body {
   color: inherit;
 }
 
+/* Стили для "Подпишитесь на рассылку" */
+
 .newsletter {
   background-color: var(--color-light);
+}
+
+.newsletter-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter-title {
+  color: var(--color-black);
+
+  font-family: var(--font-secondary);
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  width: 50%;
+}
+
+.newsletter-description {
+  width: 50%;
+}
+
+.newsletter-form {
+  width: 810px;
 }
 
 .newsletter-input {
