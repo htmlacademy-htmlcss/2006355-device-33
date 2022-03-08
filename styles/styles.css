@@ -151,9 +151,15 @@ body {
   line-height: 30px;
 }
 
-/* TODO: Попозже заменить на полноценный класс со всеми свойствами*/
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .button {
