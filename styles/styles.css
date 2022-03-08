@@ -139,13 +139,10 @@
 body {
   display: flex;
   flex-direction: column;
-
   margin: 0;
   padding: 0;
-
   color: var(--color-dark);
   background-color: var(--color-white);
-
   font-family: var(--font-main);
   font-size: 18px;
   line-height: 30px;
@@ -153,22 +150,20 @@ body {
 
 .visually-hidden {
   position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
   border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .button {
   text-decoration: none;
   text-transform: uppercase;
-
   color: var(--color-black);
   background-color: var(--color-yellow);
-
   font-family: var(--font-secondary);
   font-weight: 800;
   line-height: 21px;
@@ -176,7 +171,6 @@ body {
 
 .header-1 {
   color: var(--color-black);
-
   font-family: var(--font-secondary);
   font-size: 50px;
   font-weight: 800;
@@ -186,9 +180,7 @@ body {
 .header-2 {
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
   color: var(--color-black);
-
   font-family: var(--font-secondary);
   font-weight: 800;
   line-height: 21px;
@@ -196,7 +188,6 @@ body {
 
 .header-3 {
   color: var(--color-black);
-
   font-size: 24px;
   font-weight: 700;
 }
@@ -211,20 +202,17 @@ body {
 }
 
 /* Стили для главной страницы */
-
 .main-index {
   flex-grow: 1;
 }
 
 /* Стили для главной шапки страницы */
-
 .page-header {
   box-sizing: border-box;
   margin-top: 40px;
   padding-top: 43px;
   padding-right: 60px;
   padding-left: 60px;
-
   background-color: var(--color-yellow);
 }
 
@@ -239,20 +227,17 @@ body {
 
 .search-form {
   display: flex;
-
   width: 517px;
   margin-right: 26px;
 }
 
 .search-input {
   width: 100%;
-
   background-color: inherit;
 }
 
 .search-input::placeholder {
   color: var(--color-black);
-
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -266,13 +251,11 @@ body {
 
 .small-link {
   text-decoration: none;
-
   color: var(--color-black);
 }
 
 .header-link {
   text-decoration: none;
-
   color: var(--color-black);
 }
 
@@ -281,20 +264,19 @@ body {
 }
 
 .cart-count {
-  background: var(--color-white);
-  font-size: 14px;
-  line-height: 21px;
   min-width: 21px;
   height: 21px;
   text-align: center;
   border-radius: 50%;
+  background: var(--color-white);
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .compare-link {
-  text-decoration: none;
-
-  color: var(--color-black);
   margin-left: auto;
+  text-decoration: none;
+  color: var(--color-black);
 }
 
 .small-link:not(:last-child) {
@@ -310,9 +292,7 @@ body {
   text-decoration: none;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
   color: var(--color-black);
-
   font-family: var(--font-secondary);
   font-weight: 800;
   line-height: 21px;
@@ -334,10 +314,8 @@ body {
 .content-nav-list {
   display: flex;
   justify-content: space-between;
-
   margin: 0;
   padding: 0;
-
   list-style-type: none;
 }
 
@@ -345,23 +323,19 @@ body {
   text-decoration: none;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
   color: var(--color-black);
-
   font-family: var(--font-secondary);
   font-weight: 800;
   line-height: 21px;
 }
 
 /* Стили для раздела промо-акции */
-
 .promo {
   display: flex;
 }
 
 .promo-title {
   color: var(--color-black);
-
   font-family: var(--font-secondary);
   font-size: 50px;
   font-weight: 800;
@@ -370,12 +344,9 @@ body {
 
 .promo-count {
   margin: 0;
-
   text-align: right;
-
   color: var(--color-white);
   background-color: var(--color-yellow);
-
   font-size: 180px;
   font-weight: 700;
   line-height: 180px;
@@ -383,7 +354,6 @@ body {
 
 .promo-list-title {
   color: var(--color-dark);
-
   font-size: 16px;
 }
 
@@ -392,29 +362,23 @@ body {
 }
 
 /* Стили для категорий */
-
 .categories-list {
   display: flex;
   justify-content: space-between;
-
   margin: 0;
   padding: 0;
-
   list-style-type: none;
 }
 
 .categories-item {
   width: 160px;
   height: 160px;
-
   background-color: var(--color-yellow);
 }
 
 .categories-link {
   text-decoration: none;
-
   color: var(--color-black);
-
   font-family: var(--font-secondary);
   font-weight: 800;
   line-height: 24px;
@@ -422,13 +386,11 @@ body {
 
 .categories-link::before {
   display: block;
-
   width: 100%;
   height: 100%;
 }
 
 /* Стили для аккордеона особенностей */
-
 .features-accordion {
   background-color: var(--color-light);
 }
@@ -441,9 +403,7 @@ body {
   width: 280px;
   margin: 0;
   padding: 0;
-
   list-style-type: none;
-
   border-right: 7px solid var(--color-black);
 }
 
@@ -451,7 +411,6 @@ body {
   margin: 0;
   margin-left: 116px;
   padding: 0;
-
   list-style-type: none;
 }
 
@@ -461,44 +420,34 @@ body {
 }
 
 /* Стили для раздела специальной доставки */
-
 .special-delivery {
   display: flex;
-
   background-color: var(--color-light);
 }
 
 .special-delivery::before {
   display: block;
-
   width: 125px;
   height: 100px;
-
   background-color: var(--color-yellow);
 }
 
 .special-delivery-text {
   flex-grow: 1;
-
   margin: 40px 0;
-
   text-align: center;
-
-  font-size: 20px;
-  line-height: 23px;
-  line-height: 23px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
   color: var(--color-black);
-
   font-family: var(--font-secondary);
+  font-size: 20px;
   font-weight: 800;
+  line-height: 23px;
+  line-height: 23px;
   line-height: 21px;
 }
 
 /* Стили для "Подпишитесь на рассылку" */
-
 .newsletter {
   background-color: var(--color-light);
 }
@@ -509,13 +458,12 @@ body {
 }
 
 .newsletter-title {
+  width: 50%;
   color: var(--color-black);
-
   font-family: var(--font-secondary);
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
-  width: 50%;
 }
 
 .newsletter-description {
@@ -528,7 +476,6 @@ body {
 
 .newsletter-input {
   background-color: inherit;
-
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -536,7 +483,6 @@ body {
 
 .newsletter-button {
   text-transform: uppercase;
-
   font-family: var(--font-secondary);
   font-size: inherit;
   font-weight: 800;
@@ -544,7 +490,6 @@ body {
 }
 
 /* Разделы с информацией о магазине и контактах */
-
 .credentials-wrapper {
   display: flex;
   justify-content: space-between;
@@ -556,7 +501,6 @@ body {
 
 .about-title {
   color: var(--color-black);
-
   font-family: var(--font-secondary);
   font-size: 50px;
   font-weight: 800;
@@ -565,9 +509,7 @@ body {
 
 .about-item {
   letter-spacing: -0.02em;
-
   color: var(--color-black);
-
   font-weight: 700;
   line-height: 20px;
 }
@@ -575,10 +517,8 @@ body {
 .about-link {
   text-decoration: none;
   text-transform: uppercase;
-
   color: var(--color-black);
   background-color: var(--color-yellow);
-
   font-family: var(--font-secondary);
   font-weight: 800;
   line-height: 21px;
@@ -590,7 +530,6 @@ body {
 
 .contacts-title {
   color: var(--color-black);
-
   font-family: var(--font-secondary);
   font-size: 50px;
   font-weight: 800;
@@ -599,7 +538,6 @@ body {
 
 .store-title {
   color: var(--color-black);
-
   font-size: 24px;
   font-weight: 700;
 }
@@ -610,13 +548,11 @@ body {
 
 .contacts-phone {
   text-decoration: none;
-
   color: inherit;
 }
 
 .schedule-title {
   color: var(--color-black);
-
   font-size: 24px;
   font-weight: 700;
 }
@@ -624,27 +560,22 @@ body {
 .schedule-link {
   text-decoration: none;
   text-transform: uppercase;
-
   color: var(--color-black);
   background-color: var(--color-yellow);
-
   font-family: var(--font-secondary);
   font-weight: 800;
   line-height: 21px;
 }
 
 /* Стили для главного подвала страницы */
-
 .page-footer {
   padding-top: 62px;
-
   color: var(--color-white);
   background-color: var(--color-dark);
 }
 
 .footer-address {
   width: 148px;
-
   font-size: 16px;
   font-style: normal;
   line-height: 20px;
@@ -653,10 +584,8 @@ body {
 .footer-list {
   display: flex;
   justify-content: space-between;
-
   margin: 0;
   padding: 0;
-
   list-style-type: none;
 }
 
@@ -666,12 +595,9 @@ body {
 
 .footer-link {
   text-decoration: none;
-
-  color: inherit;
-
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
+  color: inherit;
   font-family: var(--font-secondary);
   font-weight: 800;
   line-height: 21px;
@@ -683,19 +609,18 @@ body {
 
 .footer-phone {
   color: inherit;
-
   font-size: 16px;
   line-height: 20px;
 }
 
 .social-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  margin: 0 auto;
-  width: 150px;
   flex-wrap: wrap;
+  width: 150px;
+  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
 }
 
 .social-item:not(:nth-child(3n)) {
@@ -708,23 +633,20 @@ body {
 
 .social-button {
   display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* Стили для страницы каталога */
-
 .breadcrumbs-list {
   display: flex;
-
   margin: 0;
   padding: 0;
-
   list-style-type: none;
 }
 
@@ -734,9 +656,7 @@ body {
 
 .breadcrumbs-link {
   text-decoration: none;
-
   color: var(--color-black);
-
   font-size: 16px;
   line-height: 19px;
 }
@@ -747,12 +667,9 @@ body {
 
 .service-header {
   margin: 0;
-
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
   color: var(--color-black);
-
   font-family: var(--font-secondary);
   font-size: 16px;
   font-weight: 800;
@@ -771,29 +688,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 25px 40px;
 }
 
 .catalog-filter-title {
   letter-spacing: -0.02em;
-
   color: var(--color-black);
-
   font-weight: 700;
   line-height: 20px;
 }
 
 .catalog-filter-item {
   color: var(--color-black);
-
   font-size: 16px;
   line-height: 19px;
 }
 
 .products-container {
   display: flex;
-
   box-sizing: border-box;
   padding-left: 60px;
 }
@@ -808,9 +720,7 @@ body {
 
 .product-title {
   letter-spacing: -0.02em;
-
   color: var(--color-black);
-
   font-weight: 700;
   line-height: 20px;
 }
@@ -822,13 +732,10 @@ body {
 
 .catalog-more-button {
   display: block;
-
   width: 100%;
   padding: 18px;
-
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
   font-family: var(--font-secondary);
   font-size: 16px;
   line-height: 19px;
@@ -837,7 +744,6 @@ body {
 .pagination-wrapper {
   display: flex;
   justify-content: space-between;
-
   background-color: var(--color-lightgrey);
 }
 
@@ -845,17 +751,14 @@ body {
   display: flex;
   display: flex;
   justify-content: center;
-
   width: 100%;
   margin: 0;
   padding: 0;
-
   list-style-type: none;
 }
 
 .pagination-item {
   opacity: 0.3;
-
   font-size: 16px;
   line-height: 20px;
 }
@@ -866,14 +769,12 @@ body {
 
 .pagination-link {
   text-decoration: none;
-
   color: inherit;
 }
 
 .pagination-button {
   letter-spacing: 0.2em;
   text-transform: uppercase;
-
   font-family: var(--font-secondary);
   font-size: inherit;
   font-weight: 800;
