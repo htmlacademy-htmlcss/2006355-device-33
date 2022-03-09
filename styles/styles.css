@@ -170,11 +170,17 @@ body {
   padding-right: 60px;
   padding-left: 60px;
   background-color: var(--color-yellow);
+  position: relative;
+}
+
+.header-logo {
+  position: absolute;
 }
 
 .header-first-row {
   display: flex;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .header-second-row {
@@ -254,10 +260,6 @@ body {
   margin-left: auto;
 }
 
-.auth-wrapper {
-  margin-right: auto;
-}
-
 .content-nav-list {
   display: flex;
   justify-content: space-between;
@@ -280,6 +282,7 @@ body {
 
 .promo {
   display: flex;
+  margin-bottom: 108px;
 }
 
 .promo-title {
@@ -288,6 +291,13 @@ body {
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.promo-content {
+  margin: 0;
+  margin-bottom: 61px;
 }
 
 .promo-count {
@@ -320,6 +330,10 @@ body {
 
 /* Стили для категорий */
 
+.categories {
+  margin-bottom: 70px;
+}
+
 .categories-list {
   display: flex;
   justify-content: space-between;
@@ -330,8 +344,7 @@ body {
 
 .categories-item {
   width: 160px;
-  height: 160px;
-  background-color: var(--color-yellow);
+  min-height: 160px;
 }
 
 .categories-link {
@@ -340,6 +353,12 @@ body {
   font-family: var(--font-secondary);
   font-weight: 800;
   line-height: 24px;
+  display: block;
+}
+
+.categories-cover {
+  background-color: var(--color-yellow);
+  margin-bottom: 33px;
 }
 
 .categories-link::before {
@@ -352,6 +371,7 @@ body {
 
 .features-accordion {
   background-color: var(--color-light);
+  margin-bottom: 70px;
 }
 
 .accordion-wrapper {
@@ -420,6 +440,7 @@ body {
 .credentials-wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 
 .about {
@@ -502,6 +523,8 @@ body {
 
 .newsletter {
   background-color: var(--color-light);
+  padding-top: 74px;
+  padding-bottom: 56px;
 }
 
 .newsletter-wrapper {
@@ -520,10 +543,15 @@ body {
 
 .newsletter-description {
   width: 50%;
+  margin: 0;
 }
 
 .newsletter-form {
   width: 810px;
+}
+
+.newsletter-info {
+  margin: 0;
 }
 
 .newsletter-input {
@@ -545,6 +573,7 @@ body {
 
 .page-footer {
   padding-top: 62px;
+  padding-bottom: 61px;
   color: var(--color-white);
   background-color: var(--color-dark);
 }
