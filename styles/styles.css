@@ -236,11 +236,6 @@ body {
   color: var(--color-black);
 }
 
-.catalog-container {
-  box-sizing: border-box;
-  padding: 0 60px;
-}
-
 .catalog-title {
   text-decoration: none;
   letter-spacing: 0.2em;
@@ -666,12 +661,19 @@ body {
 
 /* Стили дополнительной шапки */
 
+.subheader-container {
+  box-sizing: border-box;
+  padding: 35px 60px;
+}
+
 .subheader-title {
   color: var(--color-black);
   font-family: var(--font-secondary);
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .breadcrumbs-list {
@@ -698,6 +700,13 @@ body {
   background-color: var(--color-light);
 }
 
+.filter-products-wrapper {
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 60px;
+  padding-top: 25px;
+}
+
 .service-header {
   margin: 0;
   letter-spacing: 0.2em;
@@ -719,9 +728,11 @@ body {
 
 .catalog-sort-wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 25px 40px;
+}
+
+.catalog-sort {
+  margin-left: auto;
 }
 
 .catalog-filter-title {
@@ -745,18 +756,18 @@ body {
   margin-left: auto;
 }
 
-.products-container {
-  display: flex;
-  box-sizing: border-box;
-  padding-left: 60px;
-}
-
-.products-wrapper {
+.products-pagination-wrapper {
   background-color: var(--color-white);
+  padding-top: 70px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 78px;
 }
 
 .product-list {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .product-link {
@@ -784,12 +795,16 @@ body {
   font-family: var(--font-secondary);
   font-size: 16px;
   line-height: 19px;
+  background-color: var(--color-white);
+  margin-bottom: 44px;
 }
 
 .pagination-wrapper {
   display: flex;
   justify-content: space-between;
   background-color: var(--color-lightgrey);
+  height: 71px;
+  align-items: center;
 }
 
 /* Стили для пагинации продуктов */
