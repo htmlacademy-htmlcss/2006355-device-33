@@ -63,6 +63,14 @@
   content: url("../images/ok.svg");
 }
 
+.sort-button-up::before {
+  content: url("../images/arrow-up.svg");
+}
+
+.sort-button-down::before {
+  content: url("../images/arrow-down.svg");
+}
+
 .social-button-facebook::before {
   content: url("../images/facebook.svg");
 }
@@ -707,6 +715,14 @@ body {
   color: var(--color-black);
   font-size: 16px;
   line-height: 19px;
+}
+
+.sort-button {
+  padding: 10px 11px;
+}
+
+.sort-button-up {
+  margin-left: auto;
 }
 
 .products-container {
