@@ -4,73 +4,70 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link rel="stylesheet" href="./styles/base.css">
-  <link rel="stylesheet" href="./styles/images.css">
-  <link rel="stylesheet" href="./styles/custom.css">
+  <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
   <!-- Главный хедер страницы -->
-  <header class="page-header">
+  <header class="page-header page-container">
     <h1 class="visually-hidden">Device</h1>
     <img class="logo" src="./images/logo.svg" alt="Логотип «Device»" width="145" height="36">
 
-    <!-- Форма поиска -->
-    <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-      <input class="search-input" name="search" type="search" placeholder="Текст поиска" required>
-      <button class="search-button" type="submit">Найти</button>
-    </form>
+    <div class="header-first-row">
+      <!-- Форма поиска -->
+      <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+        <input class="search-input" name="search" type="search" placeholder="Текст поиска" required>
+        <button class="search-button" type="submit">Найти</button>
+      </form>
 
-    <!-- Обертка элементов аутентификации -->
-    <div class="auth-wrapper">
-      <a class="small-link login-link" href="#">
+      <a class="header-link profile-link" href="#">
         Войти
       </a>
-      <a class="small-link profile-link visually-hidden" href="#">
-        Коля Петухов
+
+      <!-- Ссылки на страницу сравнения и корзину -->
+      <a class="header-link compare-link" href="#">
+        Сравнить
       </a>
-      <button class="small-link visually-hidden" type="button">Выйти</button>
+      <small class="cart-count">
+        2
+      </small>
+      <a class="header-link cart-link" href="#">
+        Корзина
+      </a>
     </div>
 
-    <!-- Ссылки на страницу сравнения и корзину -->
-    <a class="small-link compare-link" href="#">
-      Сравнить
-    </a>
-    <a class="small-link cart-link" href="#">
-      Корзина
-    </a>
+    <div class="header-second-row">
+      <!-- Кнопка "Каталог товаров" -->
+      <div class="catalog-wrapper">
+        <a class="catalog-title" href="catalog.html">
+          Каталог товаров
+        </a>
+        <!-- В aria-controls указана ссылка на элемент #catalog-nav, который в будущем сверстается (может быть 🤷) -->
+        <button class="catalog-button" type="button" aria-controls="catalog-nav" aria-expanded="false" aria-haspopup>
+          <span class="visually-hidden">Скрыть / Раскрыть</span>
+        </button>
+      </div>
 
-
-    <!-- Кнопка "Каталог товаров" -->
-    <div class="catalog-wrapper">
-      <a class="header-2 catalog-title" href="catalog.html">
-        Каталог товаров
-      </a>
-      <!-- В aria-controls указана ссылка на элемент #catalog-nav, который в будущем сверстается (может быть 🤷) -->
-      <button class="catalog-button" type="button" aria-controls="catalog-nav" aria-expanded="false" aria-haspopup>
-        <span class="visually-hidden">Скрыть / Раскрыть</span>
-      </button>
+      <!-- Навигация на контентные страницы -->
+      <nav class="content-nav">
+        <ul class="content-nav-list">
+          <li class="content-nav-item">
+            <a class="content-nav-link" href="#">Доставка</a>
+          </li>
+          <li class="content-nav-item">
+            <a class="content-nav-link" href="#">Гарантия</a>
+          </li>
+          <li class="content-nav-item">
+            <a class="content-nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <!-- Навигация на контентные страницы -->
-    <nav class="content-nav">
-      <ul class="content-nav-list">
-        <li class="content-nav-item">
-          <a class="header-2 content-nav-link" href="#">Доставка</a>
-        </li>
-        <li class="content-nav-item">
-          <a class="header-2 content-nav-link" href="#">Гарантия</a>
-        </li>
-        <li class="content-nav-item">
-          <a class="header-2 content-nav-link" href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
   </header>
 
   <main class="main-index">
-    <!-- Раздел особенностей -->
-    <section class="promo">
+    <!-- Раздел промо-акции -->
+    <section class="promo page-container">
       <h2 class="visually-hidden">Особенности</h2>
 
       <!-- Фото особенности -->
@@ -87,7 +84,7 @@
       <!-- Описание особенности -->
       <div class="promo-desc">
         <p class="promo-count">01</p>
-        <p class="header-1">Порхает как бабочка, жалит как пчела!</p>
+        <p class="promo-title">Порхает как бабочка, жалит как пчела!</p>
         <p class="promo-content">
           Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
           замаскированным под стандартную камеру.
@@ -120,35 +117,41 @@
     </section>
 
     <!-- Навигация на категориям -->
-    <nav class="categories-nav">
+    <nav class="categories-wrapper page-container">
       <ul class="categories-list">
         <li class="categories-item">
-          <a class="categories-link categories-link-1" href="#">
+          <a class="categories-link" href="#">
+            <img src="./images/content/virtual-reality.svg" width="160" height="160" alt="Виртуальная реальность">
             Виртуальная реальность
           </a>
         </li>
         <li class="categories-item">
-          <a class="categories-link categories-link-2" href="#">
+          <a class="categories-link" href="#">
+            <img src="./images/content/selfie-monopods.svg" width="160" height="160" alt="Моноподы для селфи">
             Моноподы для селфи
           </a>
         </li>
         <li class="categories-item">
-          <a class="categories-link categories-link-3" href="#">
+          <a class="categories-link" href="#">
+            <img src="./images/content/action-cameras.svg" width="160" height="160" alt="Экшн-камеры">
             Экшн-камеры
           </a>
         </li>
         <li class="categories-item">
-          <a class="categories-link categories-link-4" href="#">
+          <a class="categories-link" href="#">
+            <img src="./images/content/fitness-bracelets.svg" width="160" height="160" alt="Фитнес-браслеты">
             Фитнес-браслеты
           </a>
         </li>
         <li class="categories-item">
-          <a class="categories-link categories-link-5" href="#">
+          <a class="categories-link" href="#">
+            <img src="./images/content/smart-watches.svg" width="160" height="160" alt="Умные часы">
             Умные часы
           </a>
         </li>
         <li class="categories-item">
-          <a class="categories-link categories-link-6" href="#">
+          <a class="categories-link" href="#">
+            <img src="./images/content/quadcopters.svg" width="160" height="160" alt="Квадрокоптеры">
             Квадрокоптеры
           </a>
         </li>
@@ -157,53 +160,56 @@
 
     <!-- Аккордеон особенностей -->
     <section class="features-accordion">
-      <h2 class="visually-hidden">Особенности покупки у нас</h2>
+      <div class="accordion-wrapper page-container">
+        <h2 class="visually-hidden">Особенности покупки у нас</h2>
 
-      <!-- Кнопки аккордеона -->
-      <ul class="accordion-select-list" role="tablist">
-        <li class="accordion-select-item" aria-controls="accordion-preview-item-1">
-          <button class="button accordion-button-active" type="button">Доставка</button>
-        </li>
-        <li class="accordion-select-item" aria-controls="accordion-preview-item-2">
-          <button class="button" type="button">Гарантия</button>
-        </li>
-        <li class="accordion-select-item" aria-controls="accordion-preview-item-3">
-          <button class="button" type="button">Кредит</button>
-        </li>
-      </ul>
+        <!-- Кнопки аккордеона -->
+        <ul class="accordion-select-list" role="tablist">
+          <li class="accordion-select-item" aria-controls="accordion-preview-item-1">
+            <button class="button accordion-button-active" type="button">Доставка</button>
+          </li>
+          <li class="accordion-select-item" aria-controls="accordion-preview-item-2">
+            <button class="button" type="button">Гарантия</button>
+          </li>
+          <li class="accordion-select-item" aria-controls="accordion-preview-item-3">
+            <button class="button" type="button">Кредит</button>
+          </li>
+        </ul>
 
-      <!-- Превью аккордеона -->
-      <ul class="accordion-preview-list">
-        <li class="accordion-preview-item accordion-delivery" role="tabpanel" id="accordion-preview-item-1">
-          <h3 class="header-1">Доставка</h3>
-          <p class="accordion-preview-content">
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-            совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
-            ваш этаж.
-          </p>
-        </li>
-        <li class="accordion-preview-item visually-hidden" role="tabpanel" id="accordion-preview-item-2">
-          <h3 class="accordion-preview-title">Гарантия</h3>
-        </li>
-        <li class="accordion-preview-item visually-hidden" role="tabpanel" id="accordion-preview-item-3">
-          <h3 class="accordion-preview-title">Кредит</h3>
-        </li>
-      </ul>
+        <!-- Превью аккордеона -->
+        <ul class="accordion-preview-list">
+          <li class="accordion-preview-item accordion-delivery" id="accordion-preview-item-1">
+            <h3 class="accordion-preview-title">Доставка</h3>
+            <p class="accordion-preview-content">
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+              совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
+              ваш этаж.
+            </p>
+          </li>
+          <li class="accordion-preview-item visually-hidden" id="accordion-preview-item-2">
+            <h3 class="accordion-preview-title">Гарантия</h3>
+          </li>
+          <li class="accordion-preview-item visually-hidden" id="accordion-preview-item-3">
+            <h3 class="accordion-preview-title">Кредит</h3>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Доставка редкого товара -->
-    <section class="special-delivery">
+    <section class="special-delivery page-container">
       <h2 class="special-delivery-text">Доставим редкий товар под заказ</h2>
       <a class="special-delivery-button" href="#">
         <span class="visually-hidden">Узнать больше</span>
       </a>
     </section>
 
-    <div class="wrapper-about-contacts">
+    <!-- Обертка для контактов и адреса -->
+    <div class="credentials-wrapper page-container">
       <!-- Раздел "О нас" -->
       <section class="about">
         <hr class="dash">
-        <h2 class="header-1">О нас</h2>
+        <h2 class="about-title">О нас</h2>
         <p class="about-parag">
           Огромный выбор гаджетов не оставит равнодушным гика, который есть в
           каждом из нас.
@@ -217,108 +223,115 @@
           <li class="about-item">СДИК</li>
           <li class="about-item">ТоксБерри</li>
         </ul>
-        <a class="button about-link" href="#">Подробнее о нас</a>
+        <a class="about-link" href="#">Подробнее о нас</a>
       </section>
 
       <!-- Раздел "Контакты" -->
       <section class="contacts">
         <hr class="dash">
-        <h2 class="header-1">Контакты</h2>
+        <h2 class="contacts-title">Контакты</h2>
         <p class="contacts-parag">
           Вы можете забрать товар сами, заехав в наш офис. Заодно сможете
           проверить работоспособность покупки.
         </p>
-        <h3 class="header-3">Интернет-магазин «Девайс»</h3>
-        <address class="contacts-address-container">
-          <p class="contacts-address">
+        <h3 class="store-title">Интернет-магазин «Девайс»</h3>
+        <address class="store-address">
+          <p class="store-text">
             Санкт-Петербург, набережная реки Карповки, 5, литера П.
           </p>
           <a class="contacts-phone" href="tel:+78128121212">+7 812 812-12-12</a>
         </address>
-        <h3 class="header-3">Время работы</h3>
+        <h3 class="schedule-title">Время работы</h3>
         <ul class="contacts-schedule">
           <li class="schedule-item">пн—пт: с 10:00 до 22:00</li>
           <li class="schedule-item">сб—вс: с 10:00 до 19:00</li>
         </ul>
-        <a class="button" href="#">Напишите нам</a>
+        <a class="schedule-link" href="#">Напишите нам</a>
       </section>
     </div>
 
     <!-- Раздел "Рассылки" -->
     <section class="newsletter">
-      <h2 class="header-1">Подпишитесь на рассылку</h2>
-      <p class="newsletter-content">
-        Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
-        распаковками, а также акции, спецпредложения и вот это вот всё.
-      </p>
-      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="newsletter-input" name="email" type="email" placeholder="Ваш e-mail" required>
-        <button class="newsletter-button" type="submit">Подписаться</button>
-      </form>
-      <p class="newsletter-info">Это бесплатно</p>
+      <div class="newsletter-wrapper page-container">
+        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <p class="newsletter-description">
+          Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
+          распаковками, а также акции, спецпредложения и вот это вот всё.
+        </p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="newsletter-input" name="email" type="email" placeholder="Ваш e-mail" required>
+          <button class="newsletter-button" type="submit">Подписаться</button>
+        </form>
+        <p class="newsletter-info">Это бесплатно</p>
+      </div>
     </section>
   </main>
 
   <!-- Главный футер страницы -->
   <footer class="page-footer">
-    <!-- Адрес офиса -->
-    <section class="footer-address">
-      <h2 class="visually-hidden">Адрес</h2>
-      <img class="logo logo-alt" src="./images/logo.svg" alt="Логотип «Device»" width="145" height="36">
-      <address class="footer-address">
-        Санкт-Петербург, набережная реки Карповки, 5, литера П.
-      </address>
-      <hr class="dash dash-alt">
-    </section>
+    <div class="page-container">
+      <img class="logo" src="./images/logo-alt.svg" alt="Логотип «Device»" width="145" height="36">
 
-    <!-- Футер навигация -->
-    <section class="footer-nav">
-      <h2 class="visually-hidden">Навигация</h2>
+      <div class="footer-wrapper">
+        <!-- Адрес офиса -->
+        <section class="footer-address">
+          <h2 class="visually-hidden">Адрес</h2>
+          <address class="footer-address">
+            Санкт-Петербург, набережная реки Карповки, 5, литера П.
+          </address>
+          <hr class="dash dash-alt">
+        </section>
 
-      <!-- Навигация на контентные страницы -->
-      <nav class="footer-nav">
-        <ul class="footer-list">
-          <li class="footer-item">
-            <a class="header-2 footer-link" href="#">Доставка</a>
-          </li>
-          <li class="footer-item">
-            <a class="header-2 footer-link" href="#">Гарантия</a>
-          </li>
-          <li class="footer-item">
-            <a class="header-2 footer-link" href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
+        <!-- Футер навигация -->
+        <section class="footer-links">
+          <h2 class="visually-hidden">Навигация</h2>
 
-      <!-- Лист социальных кнопок -->
-      <u l class="social-list">
-        <li class="social-item">
-          <a class="social-button social-button-facebook" href="https://www.facebook.com/htmlacademy/">
-            <span class="visually-hidden">Facebook</span>
+          <!-- Навигация на контентные страницы -->
+          <nav class="footer-nav">
+            <ul class="footer-list">
+              <li class="footer-item">
+                <a class="footer-link" href="#">Доставка</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="#">Гарантия</a>
+              </li>
+              <li class="footer-item">
+                <a class="footer-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Лист социальных кнопок -->
+          <ul class="social-list">
+            <li class="social-item">
+              <a class="social-button social-button-facebook" href="https://www.facebook.com/htmlacademy/">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-button social-button-instagram" href="https://www.instagram.com/htmlacademy/">
+                <span class="visually-hidden">Instagram</span>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-button social-button-twitter" href="https://www.twitter.com/htmlacademy_ru/">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Футер контакты -->
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Контакты</h2>
+          <a class="footer-phone" href="tel:+78128121212">+7 812 812-12-12</a>
+          <a class="academy-link" href="https://htmlacademy.ru/">
+            <img class="academy-logo" src="./images/logo-html-academy.svg" alt="Логотип «HTML Academy»" width="115"
+              height="33">
           </a>
-        </li>
-        <li class="social-item">
-          <a class="social-button social-button-instagram" href="https://www.instagram.com/htmlacademy/">
-            <span class="visually-hidden">Instagram</span>
-          </a>
-        </li>
-        <li class="social-item">
-          <a class="social-button social-button-twitter" href="https://www.twitter.com/htmlacademy_ru/">
-            <span class="visually-hidden">Twitter</span>
-          </a>
-        </li>
-      </u>
-    </section>
-
-    <!-- Футер контакты -->
-    <section class="footer-contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <a class="footer-phone" href="tel:+78128121212">+7 812 812-12-12</a>
-      <a class="academy-link" href="https://htmlacademy.ru/">
-        <img class="academy-logo" src="./images/logo-html-academy.svg" alt="Логотип «HTML Academy»" width="115"
-          height="33">
-      </a>
-    </section>
+        </section>
+      </div>
+    </div>
   </footer>
 </body>
 
