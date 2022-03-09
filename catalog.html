@@ -13,38 +13,35 @@
     <h1 class="visually-hidden">Device</h1>
     <img class="logo" src="./images/logo.svg" alt="Логотип «Device»" width="145" height="36">
 
-    <div class="page-row">
+    <div class="header-first-row">
       <!-- Форма поиска -->
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
         <input class="search-input" name="search" type="search" placeholder="Текст поиска" required>
         <button class="search-button" type="submit">Найти</button>
       </form>
 
-      <!-- Обертка элементов аутентификации -->
-      <div class="auth-wrapper">
-        <a class="small-link login-link visually-hidden" href="#">
-          Войти
-        </a>
-        <a class="small-link profile-link" href="#">
-          Коля Петухов
-        </a>
-        <button class="small-link" type="button">Выйти</button>
-      </div>
+      <a class="header-link profile-link" href="#">
+        Коля Петухов
+      </a>
+
+      <button class="header-link" type="button">Выйти</button>
 
       <!-- Ссылки на страницу сравнения и корзину -->
-      <a class="small-link compare-link" href="#">
+      <a class="header-link compare-link" href="#">
         Сравнить
       </a>
-      <a class="small-link cart-link" href="#">
+      <small class="cart-count">
+        2
+      </small>
+      <a class="header-link cart-link" href="#">
         Корзина
       </a>
-
     </div>
 
-    <div class="page-row">
+    <div class="header-second-row">
       <!-- Кнопка "Каталог товаров" -->
       <div class="catalog-wrapper">
-        <a class="header-2 catalog-title" href="catalog.html">
+        <a class="catalog-title" href="catalog.html">
           Каталог товаров
         </a>
         <!-- В aria-controls указана ссылка на элемент #catalog-nav, который в будущем сверстается (может быть 🤷) -->
@@ -57,13 +54,13 @@
       <nav class="content-nav">
         <ul class="content-nav-list">
           <li class="content-nav-item">
-            <a class="header-2 content-nav-link" href="#">Доставка</a>
+            <a class="content-nav-link" href="#">Доставка</a>
           </li>
           <li class="content-nav-item">
-            <a class="header-2 content-nav-link" href="#">Гарантия</a>
+            <a class="content-nav-link" href="#">Гарантия</a>
           </li>
           <li class="content-nav-item">
-            <a class="header-2 content-nav-link" href="#">Контакты</a>
+            <a class="content-nav-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -73,7 +70,7 @@
   <main class="main-catalog">
     <!-- Внутренняя шапка страницы -->
     <header class="catalog-container page-container">
-      <h1 class="header-1">Моноподы для селфи</h1>
+      <h1 class="subheader-title">Моноподы для селфи</h1>
       <ol class="breadcrumbs-list">
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -246,7 +243,7 @@
     <div class="page-container">
       <img class="logo" src="./images/logo-alt.svg" alt="Логотип «Device»" width="145" height="36">
 
-      <div class="page-row footer-row">
+      <div class="footer-wrapper">
         <!-- Адрес офиса -->
         <section class="footer-address">
           <h2 class="visually-hidden">Адрес</h2>
@@ -264,13 +261,13 @@
           <nav class="footer-nav">
             <ul class="footer-list">
               <li class="footer-item">
-                <a class="header-2 footer-link" href="#">Доставка</a>
+                <a class="footer-link" href="#">Доставка</a>
               </li>
               <li class="footer-item">
-                <a class="header-2 footer-link" href="#">Гарантия</a>
+                <a class="footer-link" href="#">Гарантия</a>
               </li>
               <li class="footer-item">
-                <a class="header-2 footer-link" href="#">Контакты</a>
+                <a class="footer-link" href="#">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -306,6 +303,7 @@
         </section>
       </div>
     </div>
-  </footer>/body>
+  </footer>
+</body>
 
 </html>

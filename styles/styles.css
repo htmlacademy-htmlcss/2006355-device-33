@@ -1,8 +1,4 @@
 /* Подключение декоративных изображений */
-.enter-link::before {
-  content: url("../images/person.svg");
-}
-
 .profile-link::before {
   content: url("../images/person.svg");
 }
@@ -136,6 +132,7 @@
 }
 
 /* Общие стили */
+
 body {
   display: flex;
   flex-direction: column;
@@ -169,44 +166,19 @@ body {
   line-height: 21px;
 }
 
-.header-1 {
-  color: var(--color-black);
-  font-family: var(--font-secondary);
-  font-size: 50px;
-  font-weight: 800;
-  line-height: 50px;
-}
-
-.header-2 {
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--color-black);
-  font-family: var(--font-secondary);
-  font-weight: 800;
-  line-height: 21px;
-}
-
-.header-3 {
-  color: var(--color-black);
-  font-size: 24px;
-  font-weight: 700;
-}
-
 .page-container {
   width: 1160px;
   margin: 0 auto;
 }
 
-.page-row {
-  display: flex;
-}
-
 /* Стили для главной страницы */
+
 .main-index {
   flex-grow: 1;
 }
 
 /* Стили для главной шапки страницы */
+
 .page-header {
   box-sizing: border-box;
   margin-top: 40px;
@@ -330,6 +302,7 @@ body {
 }
 
 /* Стили для раздела промо-акции */
+
 .promo {
   display: flex;
 }
@@ -362,6 +335,7 @@ body {
 }
 
 /* Стили для категорий */
+
 .categories-list {
   display: flex;
   justify-content: space-between;
@@ -391,12 +365,21 @@ body {
 }
 
 /* Стили для аккордеона особенностей */
+
 .features-accordion {
   background-color: var(--color-light);
 }
 
 .accordion-wrapper {
   display: flex;
+}
+
+.accordion-preview-title {
+  color: var(--color-black);
+  font-family: var(--font-secondary);
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
 }
 
 .accordion-select-list {
@@ -420,6 +403,7 @@ body {
 }
 
 /* Стили для раздела специальной доставки */
+
 .special-delivery {
   display: flex;
   background-color: var(--color-light);
@@ -448,6 +432,7 @@ body {
 }
 
 /* Стили для "Подпишитесь на рассылку" */
+
 .newsletter {
   background-color: var(--color-light);
 }
@@ -490,6 +475,7 @@ body {
 }
 
 /* Разделы с информацией о магазине и контактах */
+
 .credentials-wrapper {
   display: flex;
   justify-content: space-between;
@@ -568,10 +554,16 @@ body {
 }
 
 /* Стили для главного подвала страницы */
+
 .page-footer {
   padding-top: 62px;
   color: var(--color-white);
   background-color: var(--color-dark);
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-address {
@@ -643,6 +635,17 @@ body {
 }
 
 /* Стили для страницы каталога */
+
+/* Стили дополнительной шапки */
+
+.subheader-title {
+  color: var(--color-black);
+  font-family: var(--font-secondary);
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+}
+
 .breadcrumbs-list {
   display: flex;
   margin: 0;
@@ -660,6 +663,8 @@ body {
   font-size: 16px;
   line-height: 19px;
 }
+
+/* Стили для продуктов */
 
 .catalog-products {
   background-color: var(--color-light);
@@ -747,6 +752,8 @@ body {
   background-color: var(--color-lightgrey);
 }
 
+/* Стили для пагинации продуктов */
+
 .pagination-list {
   display: flex;
   display: flex;
@@ -779,8 +786,4 @@ body {
   font-size: inherit;
   font-weight: 800;
   line-height: 21px;
-}
-
-.footer-row {
-  justify-content: space-between;
 }
