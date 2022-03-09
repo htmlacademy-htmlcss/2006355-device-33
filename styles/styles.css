@@ -205,11 +205,6 @@ body {
   line-height: 20px;
 }
 
-.small-link {
-  text-decoration: none;
-  color: var(--color-black);
-}
-
 .header-link {
   text-decoration: none;
   color: var(--color-black);
@@ -233,10 +228,6 @@ body {
   margin-left: auto;
   text-decoration: none;
   color: var(--color-black);
-}
-
-.small-link:not(:last-child) {
-  margin-right: 18px;
 }
 
 .catalog-container {
