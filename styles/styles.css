@@ -309,6 +309,15 @@ body {
   font-size: 36px;
 }
 
+.slider-pagination {
+  list-style-type: none;
+  display: flex;
+}
+
+.slider-pagination-item:not(:last-child) {
+  margin-right: 20px;
+}
+
 /* Стили для категорий */
 
 .categories-list {
@@ -406,49 +415,6 @@ body {
   line-height: 21px;
 }
 
-/* Стили для "Подпишитесь на рассылку" */
-
-.newsletter {
-  background-color: var(--color-light);
-}
-
-.newsletter-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.newsletter-title {
-  width: 50%;
-  color: var(--color-black);
-  font-family: var(--font-secondary);
-  font-size: 50px;
-  font-weight: 800;
-  line-height: 50px;
-}
-
-.newsletter-description {
-  width: 50%;
-}
-
-.newsletter-form {
-  width: 810px;
-}
-
-.newsletter-input {
-  background-color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-
-.newsletter-button {
-  text-transform: uppercase;
-  font-family: var(--font-secondary);
-  font-size: inherit;
-  font-weight: 800;
-  line-height: 21px;
-}
-
 /* Разделы с информацией о магазине и контактах */
 
 .credentials-wrapper {
@@ -512,6 +478,10 @@ body {
   color: inherit;
 }
 
+.schedule-list {
+  list-style-type: none;
+}
+
 .schedule-title {
   color: var(--color-black);
   font-size: 24px;
@@ -524,6 +494,49 @@ body {
   color: var(--color-black);
   background-color: var(--color-yellow);
   font-family: var(--font-secondary);
+  font-weight: 800;
+  line-height: 21px;
+}
+
+/* Стили для "Подпишитесь на рассылку" */
+
+.newsletter {
+  background-color: var(--color-light);
+}
+
+.newsletter-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsletter-title {
+  width: 50%;
+  color: var(--color-black);
+  font-family: var(--font-secondary);
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+.newsletter-description {
+  width: 50%;
+}
+
+.newsletter-form {
+  width: 810px;
+}
+
+.newsletter-input {
+  background-color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.newsletter-button {
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+  font-size: inherit;
   font-weight: 800;
   line-height: 21px;
 }
@@ -700,6 +713,10 @@ body {
 
 .products-wrapper {
   background-color: var(--color-white);
+}
+
+.product-list {
+  list-style-type: none;
 }
 
 .product-link {
