@@ -124,6 +124,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  height: 100%;
   margin: 0;
   padding: 0;
   color: var(--color-dark);
@@ -131,7 +132,6 @@ body {
   font-family: var(--font-main);
   font-size: 18px;
   line-height: 30px;
-  height: 100%;
 }
 
 .visually-hidden {
@@ -169,11 +169,11 @@ body {
 /* Стили для главной шапки страницы */
 
 .page-header {
+  position: relative;
   box-sizing: border-box;
   margin-top: 40px;
   padding: 43px 60px 22px;
   background-color: var(--color-yellow);
-  position: relative;
 }
 
 .header-logo {
@@ -182,8 +182,8 @@ body {
 
 .header-first-row {
   display: flex;
-  margin-bottom: 50px;
   justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .header-second-row {
@@ -215,22 +215,22 @@ body {
 
 .auth-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 231px;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  flex-wrap: wrap;
-  width: 231px;
-  justify-content: space-between;
 }
 
 .sale-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 241px;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  flex-wrap: wrap;
-  width: 241px;
-  justify-content: space-between;
 }
 
 .header-link {
@@ -275,11 +275,11 @@ body {
 
 .content-nav-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  flex-wrap: wrap;
 }
 
 .content-nav-link {
@@ -300,13 +300,13 @@ body {
 }
 
 .promo-title {
+  margin: 0;
+  margin-bottom: 29px;
   color: var(--color-black);
   font-family: var(--font-secondary);
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
-  margin: 0;
-  margin-bottom: 29px;
 }
 
 .promo-content {
@@ -334,8 +334,8 @@ body {
 }
 
 .slider-pagination {
-  list-style-type: none;
   display: flex;
+  list-style-type: none;
 }
 
 .slider-pagination-item:not(:last-child) {
@@ -350,10 +350,10 @@ body {
 
 .categories-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  flex-wrap: wrap;
 }
 
 .categories-item {
@@ -370,17 +370,17 @@ body {
 }
 
 .categories-link {
+  display: block;
   text-decoration: none;
   color: var(--color-black);
   font-family: var(--font-secondary);
   font-weight: 800;
   line-height: 24px;
-  display: block;
 }
 
 .categories-cover {
-  background-color: var(--color-yellow);
   margin-bottom: 33px;
+  background-color: var(--color-yellow);
 }
 
 .categories-link::before {
@@ -392,9 +392,9 @@ body {
 /* Стили для аккордеона особенностей */
 
 .features-accordion {
-  background-color: var(--color-light);
   margin-bottom: 70px;
   padding-bottom: 72px;
+  background-color: var(--color-light);
 }
 
 .accordion-wrapper {
@@ -402,13 +402,13 @@ body {
 }
 
 .accordion-preview-title {
+  margin: 0;
+  margin-bottom: 34px;
   color: var(--color-black);
   font-family: var(--font-secondary);
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
-  margin: 0;
-  margin-bottom: 34px;
 }
 
 .accordion-preview-content {
@@ -439,8 +439,8 @@ body {
 
 .special-delivery {
   display: flex;
-  background-color: var(--color-light);
   margin-bottom: 70px;
+  background-color: var(--color-light);
 }
 
 .special-delivery::before {
@@ -474,13 +474,13 @@ body {
 }
 
 .credentials-title {
+  margin: 0;
+  margin-bottom: 48px;
   color: var(--color-black);
   font-family: var(--font-secondary);
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
-  margin: 0;
-  margin-bottom: 48px;
 }
 
 .credentials-paragraph {
@@ -498,11 +498,11 @@ body {
 }
 
 .about-item {
+  margin-bottom: 40px;
   letter-spacing: -0.02em;
   color: var(--color-black);
   font-weight: 700;
   line-height: 20px;
-  margin-bottom: 40px;
 }
 
 .about-item:not(:last-child) {
@@ -532,11 +532,11 @@ body {
 }
 
 .contacts-subtitle {
+  margin: 0;
+  margin-bottom: 15px;
   color: var(--color-black);
   font-size: 24px;
   font-weight: 700;
-  margin: 0;
-  margin-bottom: 15px;
 }
 
 .store-paragraph {
@@ -545,8 +545,8 @@ body {
 }
 
 .store-address {
-  font-style: normal;
   margin-bottom: 30px;
+  font-style: normal;
 }
 
 .contacts-phone {
@@ -554,10 +554,10 @@ body {
 }
 
 .schedule-list {
-  list-style-type: none;
   margin: 0;
-  padding: 0;
   margin-bottom: 40px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .schedule-title {
@@ -579,9 +579,9 @@ body {
 /* Стили для "Подпишитесь на рассылку" */
 
 .newsletter {
-  background-color: var(--color-light);
   padding-top: 74px;
   padding-bottom: 56px;
+  background-color: var(--color-light);
 }
 
 .newsletter-wrapper {
@@ -591,13 +591,13 @@ body {
 
 .newsletter-title {
   width: 50%;
+  margin: 0;
+  margin-bottom: 144px;
   color: var(--color-black);
   font-family: var(--font-secondary);
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
-  margin: 0;
-  margin-bottom: 144px;
 }
 
 .newsletter-description {
@@ -651,11 +651,11 @@ body {
 
 .footer-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  flex-wrap: wrap;
 }
 
 .footer-links {
@@ -728,13 +728,13 @@ body {
 }
 
 .subheader-title {
+  margin: 0;
+  margin-bottom: 16px;
   color: var(--color-black);
   font-family: var(--font-secondary);
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
-  margin: 0;
-  margin-bottom: 16px;
 }
 
 .breadcrumbs-list {
@@ -764,12 +764,13 @@ body {
 .filter-products-wrapper {
   display: flex;
   box-sizing: border-box;
-  padding-left: 60px;
   padding-top: 25px;
+  padding-left: 60px;
 }
 
 .filter-header {
   margin: 0;
+  margin-bottom: 60px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-black);
@@ -777,7 +778,6 @@ body {
   font-size: 16px;
   font-weight: 800;
   line-height: 19px;
-  margin-bottom: 60px;
 }
 
 .filter-dash {
@@ -851,18 +851,15 @@ body {
 }
 
 .products-pagination-wrapper {
+  padding: 70px 40px 78px;
   background-color: var(--color-white);
-  padding-top: 70px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 78px;
 }
 
 .product-list {
-  list-style-type: none;
   margin: 0;
-  padding: 0;
   margin-bottom: 44px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .product-link {
@@ -884,22 +881,22 @@ body {
 .catalog-more-button {
   display: block;
   width: 100%;
+  margin-bottom: 44px;
   padding: 18px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  background-color: var(--color-white);
   font-family: var(--font-secondary);
   font-size: 16px;
   line-height: 19px;
-  background-color: var(--color-white);
-  margin-bottom: 44px;
 }
 
 .pagination-wrapper {
   display: flex;
-  justify-content: space-between;
-  background-color: var(--color-lightgrey);
-  height: 71px;
   align-items: center;
+  justify-content: space-between;
+  height: 71px;
+  background-color: var(--color-lightgrey);
 }
 
 /* Стили для пагинации продуктов */
