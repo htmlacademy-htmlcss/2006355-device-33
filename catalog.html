@@ -100,16 +100,20 @@
 
         <!-- Обертка для фильтра -->
         <div class="catalog-filter-wrapper">
-          <h3 class="service-header">Фильтр</h3>
+          <h3 class="filter-header">Фильтр</h3>
+
+          <hr class="filter-dash">
 
           <!-- Фильтр для цвета -->
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <label class="catalog-filter-title" for="price-range">
               Стоимость
             </label>
-            <input class="control-input" type="range" name="price" id="price-range">
+            <input class="range-input" type="range" name="price" id="price-range">
 
-            <fieldset class="catalog-filter-group">
+            <hr class="filter-dash">
+
+            <fieldset class="color-filter-group">
               <legend class="catalog-filter-title">Цвет</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -140,8 +144,10 @@
               </ul>
             </fieldset>
 
+            <hr class="filter-dash">
+
             <!-- Фильтр для Bluetooth -->
-            <fieldset class="catalog-filter-group">
+            <fieldset class="bluetooth-filter-group">
               <legend class="catalog-filter-title">Bluetooth</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
@@ -163,7 +169,7 @@
         <div class="catalog-products-wrapper">
           <!-- Обертка для сортировки -->
           <div class="catalog-sort-wrapper">
-            <h3 class="service-header">Сортировка</h3>
+            <h3 class="sort-header">Сортировка</h3>
             <form class="catalog-sort" action="https://echo.htmlacademy.ru/" method="get">
               <select class="select-control" aria-label="Сортировка">
                 <option value="popular">Популярные</option>
