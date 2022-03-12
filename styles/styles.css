@@ -117,6 +117,10 @@
 
 /* Общие стили */
 
+html {
+  height: 100%;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -127,6 +131,7 @@ body {
   font-family: var(--font-main);
   font-size: 18px;
   line-height: 30px;
+  height: 100%;
 }
 
 .visually-hidden {
@@ -710,6 +715,10 @@ body {
 }
 
 /* Стили для страницы каталога */
+
+.main-catalog {
+  flex-grow: 1;
+}
 
 /* Стили дополнительной шапки */
 
