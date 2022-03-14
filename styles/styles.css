@@ -295,8 +295,32 @@ body {
 /* Стили для раздела промо-акции */
 
 .promo {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 560px);
+  column-gap: 40px;
   margin-bottom: 108px;
+}
+
+.promo-gallery {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
+  z-index: 2;
+}
+
+.promo-content {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.promo-count {
+  grid-row: 1 / 1;
+  grid-column: 1 / -1;
+  text-align: right;
+  color: var(--color-white);
+  background-color: var(--color-yellow);
+  font-size: 180px;
+  font-weight: 700;
+  line-height: 180px;
 }
 
 .promo-title {
@@ -309,33 +333,49 @@ body {
   line-height: 50px;
 }
 
-.promo-content {
+.promo-desc {
   margin: 0;
   margin-bottom: 61px;
 }
 
-.promo-count {
-  margin: 0;
-  text-align: right;
-  color: var(--color-white);
-  background-color: var(--color-yellow);
-  font-size: 180px;
-  font-weight: 700;
-  line-height: 180px;
+.promo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 59px;
+}
+
+.promo-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.promo-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.promo-item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .promo-list-title {
   color: var(--color-dark);
   font-size: 16px;
+  order: 2;
 }
 
 .promo-list-data {
+  margin: 0;
   font-size: 36px;
+  order: 1;
+  margin-bottom: 12px;
 }
 
 .slider-pagination {
   display: flex;
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .slider-pagination-item:not(:last-child) {
