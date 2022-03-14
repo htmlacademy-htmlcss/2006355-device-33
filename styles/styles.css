@@ -492,6 +492,15 @@ body {
   line-height: 21px;
 }
 
+.special-delivery-button {
+  background-image: url("../images/info.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 40px;
+  height: 40px;
+  padding: 30px 42px;
+}
+
 /* Разделы с информацией о магазине и контактах */
 
 .credentials-wrapper {
