@@ -907,10 +907,7 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.breadcrumbs-item:not(:last-child) {
-  margin-right: 36px;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-link {
@@ -918,6 +915,16 @@ body {
   color: var(--color-black);
   font-size: 16px;
   line-height: 19px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: url("../images/breadcrumb.svg");
+  display: inline-block;
+  margin: 0 16px;
+  width: 4px;
+  height: 7px;
+  vertical-align: middle;
+  line-height: 0;
 }
 
 /* Стили для продуктов */
