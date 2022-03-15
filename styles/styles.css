@@ -172,6 +172,7 @@ body {
 
 .header-logo {
   position: absolute;
+  top: -18px;
 }
 
 .header-first-row {
