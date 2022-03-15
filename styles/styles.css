@@ -31,10 +31,6 @@
   content: url("../images/magnifier.svg");
 }
 
-.newsletter-info::before {
-  content: url("../images/ok.svg");
-}
-
 .sort-button-up::before {
   content: url("../images/arrow-up.svg");
 }
@@ -699,32 +695,30 @@ body {
 }
 
 .newsletter-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  column-gap: 40px;
+  row-gap: 144px;
 }
 
 .newsletter-title {
-  width: 50%;
   margin: 0;
-  margin-bottom: 144px;
   color: var(--color-black);
   font-family: var(--font-secondary);
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
+  grid-column: 1 / 3;
 }
 
 .newsletter-description {
-  width: 50%;
   margin: 0;
+  grid-column: 4 / -1;
 }
 
 .newsletter-form {
-  width: 810px;
-}
-
-.newsletter-info {
-  margin: 0;
+  grid-column: 1 / 5;
+  display: flex;
 }
 
 .newsletter-input {
@@ -732,6 +726,11 @@ body {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  border: 0;
+  border-bottom: 3px solid #cecece;
+  box-sizing: border-box;
+  padding: 13px 16px;
+  flex-grow: 1;
 }
 
 .newsletter-button {
@@ -740,6 +739,20 @@ body {
   font-size: inherit;
   font-weight: 800;
   line-height: 21px;
+  letter-spacing: 0.2em;
+  padding: 18px 39px;
+  border: 3px solid #cecece;
+}
+
+.newsletter-info {
+  margin: 0;
+  grid-column: 6 / 7;
+  align-self: center;
+}
+
+.newsletter-info::before {
+  content: url("../images/ok.svg");
+  margin-right: 16px;
 }
 
 /* Стили для главного подвала страницы */
