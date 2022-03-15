@@ -1044,10 +1044,20 @@ body {
   margin-bottom: 44px;
   padding: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  gap: 40px 44px;
 }
 
 .product-link {
   text-decoration: none;
+  display: grid;
+  grid-template-columns: 226px auto;
+  row-gap: 32px;
+}
+
+.product-img {
+  grid-column: 1 / -1;
 }
 
 .product-title {
@@ -1055,11 +1065,14 @@ body {
   color: var(--color-black);
   font-weight: 700;
   line-height: 20px;
+  margin: 0;
 }
 
 .product-price {
   font-weight: inherit;
   line-height: 21px;
+  color: var(--color-dark);
+  text-align: end;
 }
 
 .catalog-more-button {
