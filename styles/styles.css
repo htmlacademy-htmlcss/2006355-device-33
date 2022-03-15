@@ -769,11 +769,38 @@ body {
   justify-content: space-between;
 }
 
+.footer-logo {
+  margin-bottom: 35px;
+}
+
 .footer-address {
-  width: 148px;
+  width: 234px;
+}
+
+.footer-address::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 7px;
+  background-color: var(--color-dark-yellow);
+  white-space: nowrap;
+}
+
+.footer-address-text {
   font-size: 16px;
   font-style: normal;
   line-height: 20px;
+  margin-bottom: 64px;
+  white-space: nowrap;
+}
+
+.footer-address::after {
+  display: block;
+  content: "";
+}
+
+.footer-links {
+  width: 444px;
 }
 
 .footer-list {
@@ -783,10 +810,6 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.footer-links {
-  width: 444px;
 }
 
 .footer-link {
@@ -805,12 +828,19 @@ body {
 
 .footer-contacts {
   width: 175px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-phone {
   color: inherit;
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 63px;
+}
+
+.academy-link {
+  align-self: flex-end;
 }
 
 .social-list {
