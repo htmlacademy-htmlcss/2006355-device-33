@@ -1017,6 +1017,24 @@ body {
   line-height: 19px;
 }
 
+.catalog-filter-button {
+  padding: 10px 20px;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-black);
+  background-image: url("../images/yellow-rect.svg");
+  background-repeat: repeat-x;
+  background-position-y: 50%;
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  line-height: 22px;
+  width: 220px;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 .sort-button {
   padding: 10px 11px;
 }
