@@ -36,6 +36,7 @@
 }
 
 /* Переменные для стилей */
+
 :root {
   --color-black: #000000;
   --color-dark: #444444;
@@ -273,12 +274,11 @@ body {
 
 .promo-gallery {
   z-index: 2;
+  display: grid;
+  height: 460;
 
   grid-row: 1 / 3;
   grid-column: 1 / 2;
-
-  height: 460;
-  display: grid;
   grid-template-columns: 70px auto 70px;
 }
 
@@ -288,15 +288,17 @@ body {
 }
 
 .slider-prev {
+  align-self: center;
+
   grid-row: 1 / -1;
   grid-column: 1 / 2;
-  align-self: center;
 }
 
 .slider-next {
+  align-self: center;
+
   grid-row: 1 / -1;
   grid-column: -1 / -2;
-  align-self: center;
 }
 
 .slider-prev::before {
@@ -340,7 +342,11 @@ body {
 }
 
 .promo-button {
+  display: block;
+  box-sizing: border-box;
+  width: 220px;
   padding: 10px 20px;
+  text-align: center;
   text-decoration: none;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -351,10 +357,6 @@ body {
   font-family: var(--font-secondary);
   font-weight: 800;
   line-height: 22px;
-  width: 220px;
-  display: block;
-  text-align: center;
-  box-sizing: border-box;
 }
 
 .promo-wrapper {
@@ -523,6 +525,7 @@ body {
   min-width: 160px;
   padding: 10px 20px;
   text-align: start;
+  text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border: 0;
@@ -534,15 +537,14 @@ body {
   font-size: inherit;
   font-weight: 800;
   line-height: 22px;
-  text-align: center;
 }
 
 .accordion-button-active {
   width: 100%;
+  text-align: start;
   color: var(--color-yellow);
   background-color: var(--color-black);
   background-image: none;
-  text-align: start;
 }
 
 /* Стили для раздела специальной доставки */
@@ -775,15 +777,15 @@ body {
 
 .newsletter-button {
   padding: 18px 39px;
+  text-decoration: none;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  color: inherit;
   border: 3px solid #cecece;
   font-family: var(--font-secondary);
   font-size: inherit;
   font-weight: 800;
   line-height: 21px;
-  text-decoration: none;
-  color: inherit;
 }
 
 .newsletter-info {
@@ -1062,7 +1064,11 @@ body {
 }
 
 .catalog-filter-button {
+  display: block;
+  box-sizing: border-box;
+  width: 220px;
   padding: 10px 20px;
+  text-align: center;
   text-decoration: none;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -1073,10 +1079,6 @@ body {
   font-family: var(--font-secondary);
   font-weight: 800;
   line-height: 22px;
-  width: 220px;
-  display: block;
-  text-align: center;
-  box-sizing: border-box;
 }
 
 .sort-button {
@@ -1168,8 +1170,8 @@ body {
 
 .pagination-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -1183,10 +1185,10 @@ body {
 }
 
 .pagination-link {
-  text-decoration: none;
-  color: inherit;
   display: block;
   padding: 15px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .pagination-button {
