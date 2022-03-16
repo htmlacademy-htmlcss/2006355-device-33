@@ -1120,7 +1120,7 @@ body {
   line-height: 20px;
 }
 
-.pagination .pagination-link {
+.pagination-link {
   text-decoration: none;
   color: inherit;
   display: block;
