@@ -494,6 +494,7 @@ body {
   font-size: inherit;
   font-weight: 800;
   line-height: 22px;
+  text-align: center;
 }
 
 .accordion-button-active {
@@ -501,6 +502,7 @@ body {
   color: var(--color-yellow);
   background-color: var(--color-black);
   background-image: none;
+  text-align: start;
 }
 
 /* Стили для раздела специальной доставки */
