@@ -276,6 +276,35 @@ body {
 
   grid-row: 1 / 3;
   grid-column: 1 / 2;
+
+  height: 460;
+  display: grid;
+  grid-template-columns: 70px auto 70px;
+}
+
+.slider-image {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+}
+
+.slider-prev {
+  grid-row: 1 / -1;
+  grid-column: 1 / 2;
+  align-self: center;
+}
+
+.slider-next {
+  grid-row: 1 / -1;
+  grid-column: -1 / -2;
+  align-self: center;
+}
+
+.slider-prev::before {
+  content: url("../images/arrow-left.svg");
+}
+
+.slider-next::before {
+  content: url("../images/arrow-right.svg");
 }
 
 .promo-content {
@@ -310,6 +339,24 @@ body {
   margin-bottom: 61px;
 }
 
+.promo-button {
+  padding: 10px 20px;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-black);
+  background-image: url("../images/yellow-rect.svg");
+  background-repeat: repeat-x;
+  background-position-y: 50%;
+  font-family: var(--font-secondary);
+  font-weight: 800;
+  line-height: 22px;
+  width: 220px;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 .promo-wrapper {
   display: flex;
   justify-content: space-between;
@@ -319,6 +366,7 @@ body {
 .promo-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 .promo-item {
@@ -351,14 +399,6 @@ body {
 
 .slider-pagination-item:not(:last-child) {
   margin-right: 20px;
-}
-
-.slider-prev::before {
-  content: url("../images/arrow-left.svg");
-}
-
-.slider-next::before {
-  content: url("../images/arrow-right.svg");
 }
 
 /* Стили для категорий */
@@ -742,6 +782,8 @@ body {
   font-size: inherit;
   font-weight: 800;
   line-height: 21px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .newsletter-info {
