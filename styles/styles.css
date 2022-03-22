@@ -85,16 +85,6 @@ body {
   border: 0;
 }
 
-.button {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--color-black);
-  background-color: var(--color-yellow);
-  font-family: var(--font-secondary);
-  font-weight: 800;
-  line-height: 21px;
-}
-
 .page-container {
   width: 1160px;
   margin: 0 auto;
