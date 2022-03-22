@@ -681,6 +681,20 @@ body {
   line-height: 24px;
 }
 
+.categories-link:hover .categories-cover {
+  background-color: var(--color-dark-yellow);
+}
+
+.categories-link:active .categories-cover,
+.categories-link:active .categories-title {
+  opacity: 0.3;
+}
+
+.categories-link:focus {
+  outline: 2px solid var(--color-purple);
+  outline-offset: 2px;
+}
+
 .categories-cover {
   margin-bottom: 33px;
   background-color: var(--color-yellow);
