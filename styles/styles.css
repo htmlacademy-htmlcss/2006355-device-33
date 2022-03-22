@@ -1050,6 +1050,20 @@ body {
   line-height: 22px;
 }
 
+.credentials-link:hover {
+  background-image: none;
+  background-color: var(--color-yellow);
+}
+
+.credentials-link:active {
+  background-image: none;
+  background-color: var(--color-dark-yellow);
+}
+
+.credentials-link:focus {
+  outline: 2px solid var(--color-purple);
+}
+
 /* Стили для "Подпишитесь на рассылку" */
 
 .newsletter {
