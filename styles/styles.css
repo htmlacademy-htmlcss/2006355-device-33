@@ -114,7 +114,7 @@ body {
   position: relative;
   box-sizing: border-box;
   margin-top: 40px;
-  padding: 43px 60px 22px;
+  padding: 43px 60px 15px;
   background-color: var(--color-yellow);
 }
 
@@ -428,40 +428,80 @@ body {
 }
 
 .promo-gallery {
-  z-index: 2;
-  display: grid;
-  height: 460;
-
-  grid-row: 1 / 3;
-  grid-column: 1 / 2;
-  grid-template-columns: 70px auto 70px;
+  position: relative;
+  margin-top: -150px;
+  z-index: 1;
+  height: 560px;
 }
 
 .slider-image {
-  grid-row: 1 / -1;
-  grid-column: 1 / -1;
+  object-fit: contain;
+  display: block;
+}
+
+.slider-button {
+  display: block;
+  width: 24px;
+  height: 64px;
+  border: 0;
+  cursor: pointer;
+  padding: 2px;
+  box-sizing: border-box;
+  background-color: transparent;
+  position: absolute;
+}
+
+.slider-button:hover::before {
+  opacity: 0.6;
+}
+
+.slider-button:active::before {
+  opacity: 0.3;
+}
+
+.slider-button:disabled::before {
+  opacity: 0.1;
+}
+
+.slider-button:focus {
+  outline: 2px solid var(--color-purple);
 }
 
 .slider-prev {
-  align-self: center;
-
-  grid-row: 1 / -1;
-  grid-column: 1 / 2;
-}
-
-.slider-next {
-  align-self: center;
-
-  grid-row: 1 / -1;
-  grid-column: -1 / -2;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-100%);
 }
 
 .slider-prev::before {
-  content: url("../images/arrow-left.svg");
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 60px;
+  background-color: transparent;
+  background-image: url("../images/triangle-arrow.svg");
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.slider-next {
+  top: 50%;
+  right: 0;
+  transform: translateY(-100%);
 }
 
 .slider-next::before {
-  content: url("../images/arrow-right.svg");
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 60px;
+  background-color: transparent;
+  background-image: url("../images/triangle-arrow.svg");
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: rotate(180deg);
 }
 
 .promo-content {
@@ -475,10 +515,12 @@ body {
   background-color: var(--color-yellow);
   font-size: 180px;
   font-weight: 700;
-  line-height: 180px;
+  line-height: 122px;
+  padding-top: 6px;
 
   grid-row: 1 / 1;
   grid-column: 1 / -1;
+  padding-right: 59px;
 }
 
 .promo-title {
@@ -489,6 +531,7 @@ body {
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
+  margin-top: -30px;
 }
 
 .promo-desc {
@@ -511,7 +554,21 @@ body {
   background-position-y: 50%;
   font-family: var(--font-secondary);
   font-weight: 800;
-  line-height: 22px;
+  line-height: 21px;
+}
+
+.promo-button:hover {
+  background-image: none;
+  background-color: var(--color-yellow);
+}
+
+.promo-button:active {
+  background-image: none;
+  background-color: var(--color-dark-yellow);
+}
+
+.promo-button:focus {
+  outline: 2px solid var(--color-purple);
 }
 
 .promo-wrapper {
@@ -556,6 +613,47 @@ body {
 
 .slider-pagination-item:not(:last-child) {
   margin-right: 20px;
+}
+
+.slider-pagination-button {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.slider-pagination-button:focus {
+  outline: 2px solid var(--color-purple);
+}
+
+.slider-pagination-button::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border: 2px solid var(--color-black);
+  border-radius: 50%;
+}
+
+.slider-pagination-button:hover::before {
+  opacity: 0.6;
+}
+
+.slider-pagination-button:active::before {
+  opacity: 0.3;
+}
+
+.slider-pagination-button:disabled::before {
+  opacity: 0.1;
+}
+
+.slider-pagination-button-current::before {
+  background-color: var(--color-black);
 }
 
 /* Стили для категорий */
