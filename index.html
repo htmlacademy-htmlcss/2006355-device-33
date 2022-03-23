@@ -47,9 +47,12 @@
     </div>
 
     <div class="navigation-wrapper">
-      <!-- В aria-controls указана ссылка на элемент #catalog-nav, который в будущем сверстается (может быть 🤷) -->
       <button class="catalog-button" type="button" aria-controls="catalog-nav" aria-expanded="false"
         aria-haspopup>Каталог товаров</button>
+
+      <nav class="catalog-nav" id="catalog-nav">
+        <!-- Контент будущей модалки -->
+      </nav>
 
       <!-- Навигация на контентные страницы -->
       <nav class="content-nav">
@@ -279,10 +282,10 @@
           распаковками, а также акции, спецпредложения и вот это вот всё.
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visualliy-hidden" for="newsletter-email">Ваша почта</label>
+          <label class="visually-hidden" for="newsletter-email">Ваша почта</label>
           <input class="newsletter-input" id="newsletter-email" name="email" type="email" placeholder="Ваш e-mail"
             required>
-          <a class="newsletter-button" href="#" type="submit">Подписаться</a>
+          <button class="newsletter-button" type="submit">Подписаться</button>
         </form>
         <p class="newsletter-info">Это бесплатно</p>
       </div>
@@ -333,7 +336,7 @@
                 <svg role="img" aria-label="Facebook Logo" width="9" height="18" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0v3h2v9h3V9h3.3l.6-3H5V4.5C5 3.7 5.3 3 6.5 3z"
-                    fill="currentColor">
+                    fill="currentColor" />
                 </svg>
               </a>
             </li>
