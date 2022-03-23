@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Каталог | HTML Academy: Девайс</title>
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="icon" href="./images/favicon.svg">
 </head>
 
 <body>
@@ -19,32 +20,31 @@
     <div class="menu-wrapper">
       <!-- Форма поиска -->
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-        <input class="search-input" name="search" type="search" placeholder="Текст поиска" required>
+        <label class="visually-hidden" for="text-search">
+          Поиск
+        </label>
+        <input class="search-input" id="text-search" name="search" type="search" placeholder="Текст поиска" required>
         <button class="search-button" type="submit">Найти</button>
       </form>
 
       <ul class="auth-list">
         <li class="auth-item">
-          <a class="header-link profile-link" href="#">
-            Коля Петухов
-          </a>
+          <a class="header-link profile-link" href="#">Коля Петухов</a>
         </li>
         <li class="auth-item">
-          <button class="header-link" type="button">Выйти</button>
+          <button class="logout-button" type="button">Выйти</button>
         </li>
       </ul>
 
       <ul class="sale-list">
         <li class="sale-item">
-          <a class="header-link compare-link" href="#">
-            Сравнить
-          </a>
+          <a class="header-link compare-link" href="#">Сравнить</a>
         </li>
         <li class="sale-item">
-          <small class="cart-count">
-            2
-          </small>
           <a class="header-link cart-link" href="#">
+            <small class="cart-count">
+              2
+            </small>
             Корзина
           </a>
         </li>
@@ -52,16 +52,12 @@
     </div>
 
     <div class="navigation-wrapper">
-      <!-- Кнопка "Каталог товаров" -->
-      <div class="catalog-wrapper">
-        <a class="catalog-title" href="catalog.html">
-          Каталог товаров
-        </a>
-        <!-- В aria-controls указана ссылка на элемент #catalog-nav, который в будущем сверстается (может быть 🤷) -->
-        <button class="catalog-button" type="button" aria-controls="catalog-nav" aria-expanded="false" aria-haspopup>
-          <span class="visually-hidden">Скрыть / Раскрыть</span>
-        </button>
-      </div>
+      <button class="catalog-button" type="button" aria-controls="catalog-nav" aria-expanded="false"
+        aria-haspopup>Каталог товаров</button>
+
+      <nav class="catalog-nav" id="catalog-nav">
+        <!-- Контент будущей модалки -->
+      </nav>
 
       <!-- Навигация на контентные страницы -->
       <nav class="content-nav">
@@ -89,7 +85,7 @@
           <a class="breadcrumbs-link" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Каталог</a>
+          <a class="breadcrumbs-link" href="#">Каталог</a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
@@ -165,7 +161,7 @@
                 </li>
               </ul>
             </fieldset>
-            <a href="#" class="catalog-filter-button" type="submit">Показать</a>
+            <button class="catalog-filter-button" type="submit">Показать</button>
           </form>
         </div>
 
@@ -174,19 +170,40 @@
           <div class="catalog-sort-wrapper">
             <h3 class="sort-header">Сортировка</h3>
             <form class="catalog-sort" action="https://echo.htmlacademy.ru/" method="get">
-              <select class="select-control" aria-label="Сортировка">
+              <label class="visually-hidden" for="sort-parameter">Сортировка</label>
+              <select class="select-control" id="sort-parameter" aria-label="Сортировка">
                 <option value="popular">Популярные</option>
                 <option value="cheap">Дешевые</option>
                 <option value="expensive">Дорогие</option>
               </select>
             </form>
 
-            <a class="sort-button sort-button-up">
+            <button class="sort-button sort-button-up" type="button">
               <span class="visually-hidden">Сверху вниз</span>
-            </a>
-            <a class="sort-button sort-button-down" href="#">
+              <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_22013_319)">
+                  <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="currentColor" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_22013_319">
+                    <rect width="11" height="10" fill="currentColor" transform="translate(11.5 10) rotate(180)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <button class="sort-button sort-button-down" type="button">
               <span class="visually-hidden">Снизу вверх</span>
-            </a>
+              <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_22013_320)">
+                  <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="currentColor" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_22013_320">
+                    <rect width="11" height="10" fill="currentColor" transform="translate(11.5 10) rotate(180)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
           </div>
 
           <!-- Обертка для продуктов и пагинации -->
@@ -198,6 +215,7 @@
                   <h4 class="product-title">Любительская
                     селфи-палка</h4>
                   <b class="product-price">500 ₽</b>
+                  <span class="product-more">Подробнее</span>
                 </a>
               </li>
               <li class="product-card">
@@ -205,6 +223,7 @@
                   <img class="product-img" src="./images/content/product-2.jpg" alt="" width="360" height="380">
                   <h4 class="product-title">Профессиональная селфи-палка</h4>
                   <b class="product-price">1 500 ₽</b>
+                  <span class="product-more">Подробнее</span>
                 </a>
               </li>
               <li class="product-card">
@@ -213,6 +232,7 @@
                   <h4 class="product-title">Непотопляемая
                     селфи-палка</h4>
                   <b class="product-price">2 500 ₽</b>
+                  <span class="product-more">Подробнее</span>
                 </a>
               </li>
               <li class="product-card">
@@ -220,13 +240,14 @@
                   <img class="product-img" src="./images/content/product-4.jpg" alt="" width="360" height="380">
                   <h4 class="product-title">Селфи-палка «Следуй за мной»</h4>
                   <b class="product-price">1 500 ₽</b>
+                  <span class="product-more">Подробнее</span>
                 </a>
               </li>
             </ul>
 
-            <a href="#" class="catalog-more-button" type="button">
+            <button class="catalog-more-button" type="button">
               Загрузить ещё
-            </a>
+            </button>
 
             <!-- Обертка пагинации товаров -->
             <div class="pagination-wrapper">
@@ -262,7 +283,10 @@
   <!-- Главный футер страницы -->
   <footer class="page-footer">
     <div class="page-container">
-      <img class="footer-logo" src="./images/logo-alt.svg" alt="Логотип «Device»" width="145" height="36">
+
+      <a class="footer-logo-link" href="/">
+        <img class="footer-logo" src="./images/logo-alt.svg" alt="Логотип «Device»" width="145" height="36">
+      </a>
 
       <div class="footer-wrapper">
         <!-- Адрес офиса -->
@@ -297,16 +321,33 @@
             <li class="social-item">
               <a class="social-button social-button-facebook" href="https://www.facebook.com/htmlacademy/">
                 <span class="visually-hidden">Facebook</span>
+                <svg role="img" aria-label="Facebook Logo" width="9" height="18" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0v3h2v9h3V9h3.3l.6-3H5V4.5C5 3.7 5.3 3 6.5 3z"
+                    fill="currentColor" />
+                </svg>
               </a>
             </li>
             <li class="social-item">
               <a class="social-button social-button-instagram" href="https://www.instagram.com/htmlacademy/">
                 <span class="visually-hidden">Instagram</span>
+                <svg role="img" aria-label="Instagram Logo" width="16" height="16" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="currentColor" />
+                  <path
+                    d="M14.7 1.3c-.9-.9-2-1.3-3.4-1.3H4.7C1.9 0 0 1.9 0 4.7v6.6c0 1.4.4 2.6 1.4 3.4.9.9 2 1.3 3.3 1.3h6.6c1.4 0 2.6-.4 3.4-1.3.8-.9 1.3-2 1.3-3.4V4.7c0-1.4-.4-2.6-1.3-3.4zM8 12.1c-2.2 0-4.1-1.8-4.1-4.1S5.8 3.9 8 3.9c2.2 0 4.1 1.8 4.1 4.1s-1.9 4.1-4.1 4.1zm4.6-7.4c-.7 0-1.3-.5-1.3-1.3s.5-1.3 1.3-1.3c.7 0 1.3.6 1.3 1.3 0 .7-.6 1.3-1.3 1.3z"
+                    fill="currentColor" />
+                </svg>
               </a>
             </li>
             <li class="social-item">
               <a class="social-button social-button-twitter" href="https://www.twitter.com/htmlacademy_ru/">
                 <span class="visually-hidden">Twitter</span>
+                <svg role="img" width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.7.155c1.5-.5 2.6.3 3.2 1.1.5-.2 1.1-.4 1.7-.6 0 .8-.5 1.4-.8 1.6.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4-.6-.2-1.8-3.1-.8-4.6 1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2z"
+                    fill="currentColor" />
+                </svg>
               </a>
             </li>
           </ul>
@@ -317,8 +358,12 @@
           <h2 class="visually-hidden">Контакты</h2>
           <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           <a class="academy-link" href="https://htmlacademy.ru/">
-            <img class="academy-logo" src="./images/logo-html-academy.svg" alt="Логотип «HTML Academy»" width="115"
-              height="33">
+            <svg role="img" aria-label="HTML Academy Logo" width="115" height="33" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0 12.9v2.6h2.5v-2.6H0zM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9zM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2zM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3zM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7zM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6zM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1-3.4 0-5.6 2.5-5.6 5.6 0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1c-.4 1.3-1.7 2.3-3.3 2.3-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22zM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6zM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6zM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6zM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4zM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9z"
+                fill="currentColor" />
+            </svg>
           </a>
         </section>
       </div>
