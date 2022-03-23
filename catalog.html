@@ -81,7 +81,7 @@
           <a class="breadcrumbs-link" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Каталог</a>
+          <a class="breadcrumbs-link" href="#">Каталог</a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
@@ -173,12 +173,32 @@
               </select>
             </form>
 
-            <a class="sort-button sort-button-up">
+            <button class="sort-button sort-button-up" type="button">
               <span class="visually-hidden">Сверху вниз</span>
-            </a>
-            <a class="sort-button sort-button-down" href="#">
+              <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_22013_319)">
+                  <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="currentColor" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_22013_319">
+                    <rect width="11" height="10" fill="currentColor" transform="translate(11.5 10) rotate(180)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <button class="sort-button sort-button-down" type="button">
               <span class="visually-hidden">Снизу вверх</span>
-            </a>
+              <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_22013_319)">
+                  <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="currentColor" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_22013_319">
+                    <rect width="11" height="10" fill="currentColor" transform="translate(11.5 10) rotate(180)" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
           </div>
 
           <!-- Обертка для продуктов и пагинации -->
@@ -190,6 +210,7 @@
                   <h4 class="product-title">Любительская
                     селфи-палка</h4>
                   <b class="product-price">500 ₽</b>
+                  <span class="product-more">Подробнее</span>
                 </a>
               </li>
               <li class="product-card">
@@ -197,6 +218,7 @@
                   <img class="product-img" src="./images/content/product-2.jpg" alt="" width="360" height="380">
                   <h4 class="product-title">Профессиональная селфи-палка</h4>
                   <b class="product-price">1 500 ₽</b>
+                  <span class="product-more">Подробнее</span>
                 </a>
               </li>
               <li class="product-card">
@@ -205,6 +227,7 @@
                   <h4 class="product-title">Непотопляемая
                     селфи-палка</h4>
                   <b class="product-price">2 500 ₽</b>
+                  <span class="product-more">Подробнее</span>
                 </a>
               </li>
               <li class="product-card">
@@ -212,13 +235,14 @@
                   <img class="product-img" src="./images/content/product-4.jpg" alt="" width="360" height="380">
                   <h4 class="product-title">Селфи-палка «Следуй за мной»</h4>
                   <b class="product-price">1 500 ₽</b>
+                  <span class="product-more">Подробнее</span>
                 </a>
               </li>
             </ul>
 
-            <a href="#" class="catalog-more-button" type="button">
+            <button href="#" class="catalog-more-button" type="button">
               Загрузить ещё
-            </a>
+            </button>
 
             <!-- Обертка пагинации товаров -->
             <div class="pagination-wrapper">
