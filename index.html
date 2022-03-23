@@ -18,10 +18,10 @@
     <div class="menu-wrapper">
       <!-- Форма поиска -->
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="search-label">
-          <span class="visually-hidden">Поиск</span>
-          <input class="search-input" name="search" type="search" placeholder="Текст поиска" required>
+        <label class="visually-hidden" for="text-search">
+          Поиск
         </label>
+        <input class="search-input" id="text-search" name="search" type="search" placeholder="Текст поиска" required>
         <button class="search-button" type="submit">Найти</button>
       </form>
 
@@ -286,7 +286,9 @@
           распаковками, а также акции, спецпредложения и вот это вот всё.
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="newsletter-input" name="email" type="email" placeholder="Ваш e-mail" required>
+          <label class="visualliy-hidden" for="newsletter-email">Ваша почта</label>
+          <input class="newsletter-input" id="newsletter-email" name="email" type="email" placeholder="Ваш e-mail"
+            required>
           <a class="newsletter-button" href="#" type="submit">Подписаться</a>
         </form>
         <p class="newsletter-info">Это бесплатно</p>

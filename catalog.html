@@ -19,9 +19,10 @@
     <div class="menu-wrapper">
       <!-- Форма поиска -->
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="search-label">
-          <span class="visually-hidden">Поиск</span>
-          <input class="search-input" name="search" type="search" placeholder="Текст поиска" required>
+        <label class="visually-hidden" for="text-search">
+          Поиск
+        </label>
+        <input class="search-input" id="text-search" name="search" type="search" placeholder="Текст поиска" required>
         </label>
         <button class="search-button" type="submit">Найти</button>
       </form>
@@ -166,7 +167,8 @@
           <div class="catalog-sort-wrapper">
             <h3 class="sort-header">Сортировка</h3>
             <form class="catalog-sort" action="https://echo.htmlacademy.ru/" method="get">
-              <select class="select-control" aria-label="Сортировка">
+              <label class="visually-hidden" for="sort-parameter">Сортировка</label>
+              <select class="select-control" id="sort-parameter" aria-label="Сортировка">
                 <option value="popular">Популярные</option>
                 <option value="cheap">Дешевые</option>
                 <option value="expensive">Дорогие</option>
