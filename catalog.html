@@ -23,7 +23,6 @@
           Поиск
         </label>
         <input class="search-input" id="text-search" name="search" type="search" placeholder="Текст поиска" required>
-        </label>
         <button class="search-button" type="submit">Найти</button>
       </form>
 
@@ -52,9 +51,12 @@
     </div>
 
     <div class="navigation-wrapper">
-      <!-- В aria-controls указана ссылка на элемент #catalog-nav, который в будущем сверстается (может быть 🤷) -->
       <button class="catalog-button" type="button" aria-controls="catalog-nav" aria-expanded="false"
         aria-haspopup>Каталог товаров</button>
+
+      <nav class="catalog-nav" id="catalog-nav">
+        <!-- Контент будущей модалки -->
+      </nav>
 
       <!-- Навигация на контентные страницы -->
       <nav class="content-nav">
@@ -158,7 +160,7 @@
                 </li>
               </ul>
             </fieldset>
-            <a href="#" class="catalog-filter-button" type="submit">Показать</a>
+            <button class="catalog-filter-button" type="submit">Показать</button>
           </form>
         </div>
 
@@ -191,11 +193,11 @@
             <button class="sort-button sort-button-down" type="button">
               <span class="visually-hidden">Снизу вверх</span>
               <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_22013_319)">
+                <g clip-path="url(#clip0_22013_320)">
                   <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="currentColor" />
                 </g>
                 <defs>
-                  <clipPath id="clip0_22013_319">
+                  <clipPath id="clip0_22013_320">
                     <rect width="11" height="10" fill="currentColor" transform="translate(11.5 10) rotate(180)" />
                   </clipPath>
                 </defs>
@@ -242,7 +244,7 @@
               </li>
             </ul>
 
-            <button href="#" class="catalog-more-button" type="button">
+            <button class="catalog-more-button" type="button">
               Загрузить ещё
             </button>
 
@@ -321,7 +323,7 @@
                 <svg role="img" aria-label="Facebook Logo" width="9" height="18" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M6.5 3H9V0H5.6C2.8 0 2 1.7 2 4.2V6H0v3h2v9h3V9h3.3l.6-3H5V4.5C5 3.7 5.3 3 6.5 3z"
-                    fill="currentColor">
+                    fill="currentColor" />
                 </svg>
               </a>
             </li>

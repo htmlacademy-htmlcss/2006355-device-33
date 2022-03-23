@@ -1135,6 +1135,7 @@ body {
   font-size: inherit;
   font-weight: 800;
   line-height: 21px;
+  cursor: pointer;
 }
 
 .newsletter-button:hover {
@@ -1565,6 +1566,9 @@ body {
   font-family: var(--font-secondary);
   font-weight: 800;
   line-height: 22px;
+  border: 0;
+  cursor: pointer;
+  font-size: inherit;
 }
 
 .catalog-filter-button:hover {
